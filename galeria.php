@@ -18,7 +18,7 @@
                     <div class="thumbnail thumbnail2">
                       <div class="caption text-justify">
                         <h4><b><?php echo ucwords($galeria[1]); ?></b></h4>
-                          <a href="<?php echo $rout2; ?>"><img src="<?php echo $rout; ?>" title="<?php echo ucwords($galeria[1]); ?>"/></a>
+                          <a href="<?php echo $rout2; ?>"><img src="<?php echo $rout; ?>" title="<?php echo ucwords($galeria[1]); ?>" class="img-rounded" /></a>
                       </div>
                     </div>
                   </div>     

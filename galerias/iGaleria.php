@@ -86,11 +86,11 @@
       </script>
       <!--End of Tawk.to Script-->
       </dvi>
-      <div class="col-sm-8 col-md-8" id="main">
+      <div class="col-sm-8 col-md-8 col-md-offset-1 body" id="main">
           <div id="slider-wrapper">
               <div id="slider">
                 <?php while ($foto = mysql_fetch_array($result)) { ?>
-                    <a href="#"><img src="<?php echo $foto[2]; ?>" /></a>
+                    <a href="#"><img src="<?php echo $foto[2]; ?>" class="img-rounded" /></a>
                 <?php } ?>
               </div>
 
@@ -145,6 +145,9 @@
       });
       $(".galeria").click(function(){
         $("#main").load("../navegacion/galeria.php");
+      });
+      $(".contacto").click(function(){
+        $("#main").load("contacto.php");
       });
     });
 

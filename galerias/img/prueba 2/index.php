@@ -74,7 +74,7 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
       </dvi>
-      <div class="col-sm-8 col-md-8" id="main">
+      <div class="col-sm-8 col-md-8 col-md-offset-1 body" id="main">
           <div id="slider-wrapper">
               <div id="slider">
                 <?php while ($foto = mysql_fetch_array($result)) { ?>
@@ -133,6 +133,9 @@
       });
       $(".galeria").click(function(){
         $("#main").load("../navegacion/galeria.php");
+      });
+      $(".contacto").click(function(){
+        $("#main").load("../contacto.php");
       });
     });
 
