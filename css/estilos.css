@@ -1,7 +1,11 @@
+body {
+	background: #F3EBEB;
+}
 .jumbotron {
-	background: url("../img/head2.jpg") no-repeat;
+	background: url("../img/header.png") no-repeat;
   	background-size: cover;
-  	height: 250px;
+  	margin-top: 50px; 
+  	
 	
 }
 footer {
