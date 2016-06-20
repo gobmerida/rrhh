@@ -1,0 +1,14 @@
+.jumbotron {
+	background: url("../img/head2.jpg") no-repeat;
+  	background-size: cover;
+  	height: 250px;
+	
+}
+footer {
+	background: #CB050C;
+	color: #FFF;
+}
+
+.nav-pills-stacked {
+	background: red;
+}
