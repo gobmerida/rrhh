@@ -23,3 +23,9 @@ footer {
 .nav-pills-stacked {
 	background: red;
 }
+
+.boot{
+	bottom: 0px; 
+    position: absolute;
+    width: 100%;
+}
