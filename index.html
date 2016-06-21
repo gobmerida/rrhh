@@ -35,6 +35,8 @@
 				            <li><a href="#">Misión</a></li>
 				            <li role="separator" class="divider"></li>
 				            <li><a href="#">Visión</a></li>
+				             <li role="separator" class="divider"></li>
+				            <li><a href="#">Objetivos</a></li>
 				            <li role="separator" class="divider"></li>
 				            <li><a href="#">Funciones RRHH</a></li>
 				        </ul>
@@ -55,8 +57,10 @@
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
 	</nav>
-		<div class="jumbotron">
-		</div>
+			<div class="jumbotron">
+			<img src="img/header3.png" class="img-responsive" alt="">
+			</div>
+		
 	</header>
 	<div class="container-fluid">
 		<div class="row">
@@ -71,8 +75,8 @@
 					    Inicio
 					  </a>
 					  <a href="#" class="list-group-item reseña">Reseña Histórica</a>
-					  <a href="#" class="list-group-item">Misión y Visón</a>
-					  <a href="#" class="list-group-item">Objetivos</a>
+					  <a href="#" class="list-group-item myv">Misión y Visón</a>
+					  <a href="#" class="list-group-item objetivos">Objetivos</a>
 					  <a href="#" class="list-group-item funciones" >Funciones RRHH</a>
 					  <a href="#" class="list-group-item">Noticias</a>
 					  <a href="#" class="list-group-item">Galeria</a>
@@ -84,9 +88,6 @@
 			</div>
 		</div>
 	</div>
-	<br>
-	<br>
-	<br>
 	<br>
 	<br>
 	<marquee class="hidden-xs" direction='right' scrollamount="4" onmouseout='this.start()' onmouseover='this.stop()'>
@@ -117,19 +118,20 @@
 				$("#main").load("inicio.html");
 			});
 
-		});
-		$(function(){
 			$(".reseña").click(function(){
 				$("#main").load("reseña.html");
 			});
-
-		});
-		$(function(){
 			$(".funciones").click(function(){
 				$("#main").load("funciones.html");
 			});
-
+			$(".myv").click(function(){
+				$("#main").load("myv.html");
+			});
+			$(".objetivos").click(function(){
+				$("#main").load("objetivos.html");
+			});
 		});
+			
 	</script>
 </body>
 </html>

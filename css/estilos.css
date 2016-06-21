@@ -1,11 +1,10 @@
 body {
 	background: #EBEBEB;
 }
-.jumbotron {
-	background: url("../img/header3.png") no-repeat;
-  	background-size: cover;
-  	margin-top: 50px; 
-  	height: 130px;
+.jumbotron img {
+	
+width: 100%;
+height: 150px;
   	
 	
 }
