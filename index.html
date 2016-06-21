@@ -41,7 +41,7 @@
 				            <li><a href="#">Funciones RRHH</a></li>
 				        </ul>
 			        </li>
-			        <li><a href="#">Noticias</a></li>
+			        <li><a href="#" class="noticias">Noticias</a></li>
 			        <li><a href="#">Galeria</a></li>
 			        <li><a href="#">Contacto</a></li>
 
@@ -78,7 +78,7 @@
 					  <a href="#" class="list-group-item myv">Misión y Visón</a>
 					  <a href="#" class="list-group-item objetivos">Objetivos</a>
 					  <a href="#" class="list-group-item funciones" >Funciones RRHH</a>
-					  <a href="#" class="list-group-item">Noticias</a>
+					  <a href="#" class="list-group-item noticias">Noticias</a>
 					  <a href="#" class="list-group-item">Galeria</a>
 					  <a href="#" class="list-group-item">Contacto</a>
 					  <a href="#" class="list-group-item">Constancias y Recibos</a>
@@ -129,6 +129,9 @@
 			});
 			$(".objetivos").click(function(){
 				$("#main").load("objetivos.html");
+			});
+			$(".noticias").click(function(){
+				$("#main").load("noticias.php");
 			});
 		});
 			
