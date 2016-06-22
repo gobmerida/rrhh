@@ -1,40 +1,54 @@
 
-  <div class="col-sm-7 col-md-4">
-    <div class="thumbnail">
-      <img src="img/noticias/images1.jpeg" alt="" class="imgnot">
-      <div class="caption text-justify">
-        <h3>Titulo de la noticia</h3> <h5>2016-01-20</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nihil doloribus itaque obcaecati possimus, in quam, deleniti nulla perspiciatis voluptatum provident aliquid deserunt quod sit, saepe ad. Aut, praesentium, ducimus.</p>
-        <p><a href="#" class="btn btn-danger" role="button">Leer mas</a> 
+<?php  
+  
+    header("Content-Type:text/html;charset=utf-8");
+    $h="localhost";
+    $u="root";
+    $p="infor1234";
+    $con=mysql_connect($h,$u,$p) or die (mysql_error());
+    mysql_select_db("PaginaMeridaGob_rrhh",$con) or die (mysql_error());
+    mysql_query("SET NAMES 'utf8'");
+
+
+    $sql   = "select * from data02 order by FechaPublicacion";
+    $query = mysql_query($sql);
+
+    while ($res = mysql_fetch_array($query)) { ?>
+
+      <div class="col-sm-7 col-md-4">
+        <div class="thumbnail">
+        <img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="imgnot">
+          <div class="caption text-justify">
+            <h3><?php echo $res[1]; ?></h3> <h5><?php echo "<b>Fecha de publicacion (".$res[3].")</b>"; ?></h5>
+            <p><?php echo substr($res[2], 0,410)."....."; ?></p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Leer mas</button> 
+          </div>
+        </div>
       </div>
+
+   <?php }
+
+
+?>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="thumbnail">
+      <?php 
+
+        $sql   = "select * from data02 where id=5 order by FechaPublicacion ";
+        $query = mysql_query($sql);
+        $res = mysql_fetch_array($query);
+
+      ?>
+          
+          <div class="caption text-justify">
+
+            <h3><?php echo $res[1]; ?></h3> <h5><?php echo "<b>Fecha de publicacion (".$res[3].")</b>"; ?></h5>
+            <p><img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="imgnot img"><?php echo $res[2]; ?></p>
+          </div>
+        </div>
     </div>
   </div>
-
-    <div class="col-sm-7 col-md-4">
-    <div class="thumbnail">
-      <img src="img/noticias/images2.jpeg" alt="" class="imgnot">
-      <div class="caption text-justify">
-        <h3>Titulo de la noticia</h3> <h5>2016-01-20</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nihil doloribus itaque obcaecati possimus, in quam, deleniti nulla perspiciatis voluptatum provident aliquid deserunt quod sit, saepe ad. Aut, praesentium, ducimus.</p>
-        <p><a href="#" class="btn btn-danger" role="button">Leer mas</a> 
-      </div>
-    </div>
-  </div>
-
-    <div class="col-sm-7 col-md-4">
-    <div class="thumbnail">
-      <img src="img/noticias/images3.jpeg" alt="" class="imgnot">
-      <div class="caption text-justify">
-        <h3>Titulo de la noticia</h3> <h5>2016-01-20</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nihil doloribus itaque obcaecati possimus, in quam, deleniti nulla perspiciatis voluptatum provident aliquid deserunt quod sit, saepe ad. Aut, praesentium, ducimus.</p>
-        <p><a href="#" class="btn btn-danger" role="button">Leer mas</a> 
-      </div>
-    </div>
-  </div>
-
-  <nav>
-  <ul class="pager ">
-    <li><a href="#" class="text-danger">Anterior</a></li>
-    <li><a href="#" class="text-danger">Siguiente</a></li>
-  </ul>
-</nav>
+</div>
