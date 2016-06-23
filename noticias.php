@@ -10,7 +10,7 @@
     mysql_query("SET NAMES 'utf8'");
 
 
-    $sql   = "select * from data02 order by FechaPublicacion";
+    $sql   = "select * from data02 order by FechaPublicacion  LIMIT 0,3";
     $query = mysql_query($sql);
 
 
