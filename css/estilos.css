@@ -37,7 +37,29 @@ footer {
 }
 
 .img{
-	width: 30%;
-	float: left;
-	margin-right: 2%;
+	width: 35% !important;
+	float: left !important;
+	height: 300px !important;
+	margin-right: 2% !important;
+}
+
+
+.regresar{
+	text-decoration: none;
+	float: right;
+	color: #fff;
+	background-color: #d9534f;
+	font-size: 20px;
+	border-radius: 110%;
+	padding: 5px;
+	margin-top: -2%;
+}
+
+.noti{
+	background-color: #fff;
+	padding: 15px;
+	height: 500px;
+	overflow: scroll;
+	font-size: 20px;
+	box-shadow: 15px 15px 10px #8B8B8B inset 15px 15px 10px #8B8B8B;
 }
