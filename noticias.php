@@ -1,6 +1,6 @@
 
-<?php  
-  
+<?php
+
     header("Content-Type:text/html;charset=utf-8");
     $h="localhost";
     $u="root";
@@ -16,13 +16,12 @@
 
     while ($res = mysql_fetch_array($query)) { ?>
 
-      <div class="col-sm-7 col-md-4">
+      <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
-        <img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="imgnot">
-          <div class="caption text-justify">
-            <h3><?php echo $res[1]; ?></h3> <h5><?php echo "<b>Fecha de publicacion (".$res[3].")</b>"; ?></h5>
-            <p><?php echo substr($res[2], 0,410)."....."; ?></p>
-            <a href="noticiasf.php?id=<?php echo $res[0]; ?>" class="btn btn-danger" roll="boton  ">Leer mas</a>
+          <div class="caption ">
+            <h4><b><?php echo $res[1]; ?></b></h4>
+              <img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="imgnot">
+              <a href="noticiasf.php?id=<?php echo $res[0]; ?>" class="btn btn-danger" roll="boton  ">Leer mas</a>
           </div>
         </div>
       </div>

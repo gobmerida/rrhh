@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-	
+
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
@@ -27,8 +27,8 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
 			        <li class="active"><a href="/rrhh/">Inicio <span class="sr-only">(current)</span></a></li>
-			        <li><a href="/rrhh/">Salir <span class="sr-only">(current)</span></a></li>
-			        
+			        <li><a href="../">Salir <span class="sr-only">(current)</span></a></li>
+
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -36,14 +36,14 @@
 			<div class="jumbotron">
 			<img src="../img/header3.png" class="img-responsive" alt="">
 			</div>
-		
+
 	</header>
 	<div class="hidden-xs col-sm-2 col-md-2"></div>
 
 	<div class="col-sm-8 col-md-8" id="main">
 			<div class="hidden-xs col-sm-3 col-md-3"></div>
 				<div class="col-sm-6	 col-md-6	">
-				
+
 					<form id='g_noticia' enctype="multipart/form-data" method="post"  onsubmit="return validar(this);" action="recepcion.php">
 						<div class="form-group">
 							<label for="">Título</label>
@@ -53,12 +53,12 @@
 							<label for="">Contenido</label>
 							<textarea type="text" id="contenido" name="contenido" class="form-control" autocomplete="off" rows="10"></textarea>
 						</div>
-						
+
 						<div class="form-grup">
 							<label>Foto</label>
 							<input type="file" id="imagen" name="imagen"/>
 						</div>
-						
+
 						<div class="form-grup">
 							<label for="">Proviene</label>
 							<select name="relevancia" id="relevancia" class="form-control">
@@ -67,16 +67,16 @@
 								<option value="1">Otras</option>
 							</select>
 						</div>
-							
+
 						<?php
 							$QuienPublica = $_SESSION['IdRol_pagerrhh'];
 							echo "<input type='hidden' name='quienp' id='quienp' value='$QuienPublica'/>";
 						?>
 						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center>
-						
+
 					</form>
 				</div>
-			<div class="hidden-xs col-sm-3 col-md-3"></div>	
+			<div class="hidden-xs col-sm-3 col-md-3"></div>
 	</div>
 
 	<div class="hidden-xs col-sm-2 col-md-2"></div>
