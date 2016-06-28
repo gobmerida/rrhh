@@ -13,15 +13,15 @@
     $sql   = "select * from data02 order by FechaPublicacion  LIMIT 0,3";
     $query = mysql_query($sql);
 
-
     while ($res = mysql_fetch_array($query)) { ?>
-
       <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
-          <div class="caption ">
+          <div class="caption text-justify">
             <h4><b><?php echo $res[1]; ?></b></h4>
               <img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="imgnot">
-              <a href="noticiasf.php?id=<?php echo $res[0]; ?>" class="btn btn-danger" roll="boton  ">Leer mas</a>
+              <p><?php echo substr($res[2], 0,250)."...."; $res[2];  ?></p>
+              <a href="noticiasf.php?id=<?php echo $res[0]; ?>" class="btn btn-danger" roll="boton  ">
+              Leer mas</a>
           </div>
         </div>
       </div>

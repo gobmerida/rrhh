@@ -5,39 +5,41 @@
 
     extract($_POST);
     $archivo = $_FILES["foto"]["name"][0];
+
     $dir = "img/".$nombre;
-    $query  = "insert into galeria (`nombreDIR`, `fotoDIR`) values ('$nombre','$archivo')";
-    $res = mysql_query($query) or die(mysql_error());
+    $dirpegar = "rrhh/galerias/img/".$nombre."/";
+    $dirar = "base/";
 
-    $query2 = "select max(id) from galeria";
-    $res2   = mysql_query($query2);
-    $id2    = mysql_fetch_array($res2);
 
-    echo $id2[0];
+    //$query  = "insert into galeria (`nombreDIR`, `fotoDIR`) values ('$nombre','$archivo')";
+    //$res = mysql_query($query) or die(mysql_error());
+
+    
 
     umask(011);
     mkdir("img/".$_POST["nombre"], 0777);
     chmod("img/".$_POST["nombre"], 0777);
-    chmod("var/www/html/", 777);
 
-    foreach ($_FILES["foto"]["error"] as $key => $error) {
-      $nombre_archivo = $_FILES["foto"]["name"][$key];
-      $tipo_archivo = $_FILES["foto"]["type"][$key];
-      $tamano_archivo = $_FILES["foto"]["size"][$key];
-      $temp_archivo = $_FILES["foto"]["tmp_name"][$key];
+    /*if(isset($_FILES['foto'])){
 
+      //almacenamos las propiedades de las imagenes
+      $name_array = $_FILES['foto']['name'];
+      $tmp_name_array = $_FILES['foto']['tmp_name'];
+      $type_array = $_FILES['foto']['type'];
+      $size_array = $_FILES['foto']['size'];
+      $error_array = $_FILES['foto']['error'];
 
-          $nom_img = $nombre_archivo;
-          
-          echo $queryfotos = "INSERT INTO `fotos`(`foto`, `directorio`) VALUES ('$nom_img','$id2[0]')";
-          mysql_query($queryfotos);
+      //recorremos el array de imagenes para subirlas al simultaneo
+      /*for($i = 0; $i < count($tmp_name_array); $i++){
+          if(move_uploaded_file($tmp_name_array[$i],$dir."/".$name_array[$i])){
 
-          if (!move_uploaded_file($temp_archivo,$dir . "/" . $nom_img))
-          {
-              echo "No se pudo cargar las fotos";
-        }
-    }
-
-    //header('Location: index.php');
+              //guardamos en la base de datos el nombre
+              $act = "INSERT INTO fotos (directorio, foto) values ('$nombre','$name_array[$i]')";
+              mysql_query($act);
+          }
+      }
+    }*/
+  
+  //header('Location: index.php');
 
 ?>

@@ -83,7 +83,7 @@
               <div class="noti">
 
                   <div class="caption text-justify">
-                    <a href="#" class="noticiasf regresar">X</a>
+                    <a href="#" class="noticiasf regresar noticias">X</a>
                     <h3><?php echo $res[1]; ?></h3> <h5><?php echo "<b>Fecha de publicacion (".$res[3].")</b>"; ?></h5>
                     <p><img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="img"><?php echo $res[2]; ?></p>
                   </div>
@@ -146,6 +146,10 @@
 
       $(".noticiasf").click(function(){
         $("#main").load("noticias.php");
+      });
+
+      $(".galeria").click(function(){
+        $("#main").load("galeria.php");
       });
 
     });
