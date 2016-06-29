@@ -66,7 +66,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
 			        <li><a href="index.php">Inicio <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#" class="noticias">Noticias</a></li>
+			        <li><a href="noticias.php">Noticias</a></li>
 			        <li><a href="#" class="galeria">Galeria</a></li>
 							<li class="dropdown">
 				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros<span class="caret"></span></a>

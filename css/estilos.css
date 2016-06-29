@@ -13,9 +13,11 @@ height: 150px;
 	top: -7%;
 }
 
-.pagination a{
-	color: #B8252A !important;
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	background-color: #B8252A !important;
+	border-color: #B8252A !important;
 }
+
 
 #form-galeria{
 	margin-bottom: 5%;
