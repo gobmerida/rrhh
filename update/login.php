@@ -2,17 +2,6 @@
 
 	require_once '../db/conexion.php';
 
-	$query   = "select * from usuario where Usuario= '$usuario' ";
-	$result  = mysql_query($query);
-	$ingreso = mysql_fetch_array($result);
-
-	if( isset($user) or isset($pass)){
-
-		header("location: login.php");
-
-	}else{
-
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -27,7 +16,6 @@
 
 </head>
 <body>
-
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
@@ -45,42 +33,43 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
-			        <li><a href="../index.php">Salir <span class="sr-only">(current)</span></a></li>
-		      </ul>
+			        <li><a href="index.php">Inicio <span class="sr-only">(current)</span></a></li>
+		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
 	</nav>
 			<div class="jumbotron">
-					<img src="../img/header3.png" class="img-responsive" alt="">
+				<img src="../img/header3.png" class="img-responsive" alt="">
 			</div>
 	</header>
 	<div class="container-fluid">
 		<div class="row">
-			<dvi class="col-sm-2 col-md-2"></dvi>
-			<div class="col-sm-8 col-md-8" id="main">
-          <form action="crear.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria" enctype="multipart/form-data">
-              <div class="form-group">
-                  <label for="nombre">Nombre de la galeria</label>
-                  <input type="text" name="nombre" class="form-control input-lg" placeholder="Nombre de la galeria" autocomplete="off">
-              </div>
-              <div class="form-group">
-                  <label for="foto">Fotos del album</label>
-                  <input type="file" name="foto[]" value="Subir foto"  multiple="multiple">
-              </div>
-              <button type="submit" class="btn btn-danger btn-sm">Guardar galeria</button>
-          </form>
+			<dvi class="col-sm-2 col-md-2">
+				
+			</dvi>
+			<div class="col-sm-8 col-md-8" >
+				<form action="" class="col-sm-6 col-md-offset-3" id="form-galeria">
+					<div class="form-group">
+						<label for="">Usuario</label>
+						<input type="text" name="usuario" class="form-control input-lg">
+					</div>
+					<div class="form-group">
+						<label for="">Contraseña</label>
+						<input type="password" name="pass" class="form-control input-lg">
+					</div>
+					<button type="submit" class="btn btn-danger btn-lg ">Ingresar</button>
+				</form>
 			</div>
 			<dvi class="col-sm-2 col-md-2"></dvi>
 		</div>
+
 	</div>
 
 	<footer>
 			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b>
 	</footer>
-	<script src="../js/jquery-1.12.3.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/magicslideshow.js"></script>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/magicslideshow.js"></script>
 </body>
 </html>
-
-<?php } ?>

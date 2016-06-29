@@ -1,3 +1,12 @@
+<?php
+	
+	require_once '../db/conexion.php';
+
+	if($user!=$row['Usuario'] or md5($pass)!=$row['Pass']){
+		header("location: login.php");
+	}
+	
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

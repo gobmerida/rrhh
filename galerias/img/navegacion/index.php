@@ -80,7 +80,7 @@
   		</div><!-- /.container-fluid -->
 	</nav>
 			<div class="jumbotron">
-				<img src="img/header3.png" class="img-responsive" alt="">
+					<img src="img/header3.png" class="img-responsive" alt="">
 			</div>
 	</header>
 	<div class="container-fluid">
@@ -96,7 +96,7 @@
 					<div id="slider-wrapper">
 				      <div id="slider">
 				        <a href="noticiasf.php?id=<?php echo $resnot[0]; ?>"><img src="update/img/<?php echo $resnot[6]; ?>" /><p ><?php echo "<span class='text'>". ucwords($resnot[1])."</span></br><span class='text2'>".substr($resnot[2], 0, 100)."...</span>"; ?></p></a>
-				        <a href="galerias/img/<?php echo $resgaleria[1]."/"; ?>"><img src="galerias/img/<?php echo $resgaleria[1]."/".$resgaleria[2]; ?>" /><p ><?php echo "<span class='text'> Galerida de ". ucwords($resgaleria[1]); ?></p></a>
+				        <a href="galerias/img/<?php echo $resgaleria[1]."/"; ?>"><img src="galerias/img/<?php echo $resgaleria[1]."/".$resgaleria[2]; ?>" /><p ><?php echo "<span class='text'>". ucwords($resgaleria[1]); ?></p></a>
 				        <a href="#"><img src="update/img/images3.jpeg" /><p>MENSAJES</p></a>
 
 				      </div>
@@ -113,7 +113,7 @@
 		</div>
 		<div class="col-sm-2 col-md-2"></div>
 		<div class="col-sm-8 col-md-8">
-			<marquee class="hidden-xs" direction="left" scrollamount="4">
+			<marquee class="hidden-xs" direction="right" scrollamount="4">
 					<a href=""><img src="img/insti/171.png" alt=""></a>
 					<a href=""><img src="img/insti/bomberos.png" alt=""></a>
 					<a href=""><img src="img/insti/fundacite.jpg" alt=""></a>

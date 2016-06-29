@@ -7,12 +7,12 @@
     $archivo = $_FILES["foto"]["name"][0];
 
     $dir = "img/".$nombre;
-    $dirpegar = "rrhh/galerias/img/".$nombre."/";
-    $dirar = "base/";
+    $dirpegar = "img/".$nombre."/index.php";
+    $dirar = "iGaleria.php";
 
 
-    //$query  = "insert into galeria (`nombreDIR`, `fotoDIR`) values ('$nombre','$archivo')";
-    //$res = mysql_query($query) or die(mysql_error());
+    $query  = "insert into galeria (`nombreDIR`, `fotoDIR`) values ('$nombre','$archivo')";
+    $res = mysql_query($query) or die(mysql_error());
 
     
 
@@ -20,7 +20,7 @@
     mkdir("img/".$_POST["nombre"], 0777);
     chmod("img/".$_POST["nombre"], 0777);
 
-    /*if(isset($_FILES['foto'])){
+    if(isset($_FILES['foto'])){
 
       //almacenamos las propiedades de las imagenes
       $name_array = $_FILES['foto']['name'];
@@ -30,7 +30,7 @@
       $error_array = $_FILES['foto']['error'];
 
       //recorremos el array de imagenes para subirlas al simultaneo
-      /*for($i = 0; $i < count($tmp_name_array); $i++){
+      for($i = 0; $i < count($tmp_name_array); $i++){
           if(move_uploaded_file($tmp_name_array[$i],$dir."/".$name_array[$i])){
 
               //guardamos en la base de datos el nombre
@@ -38,8 +38,10 @@
               mysql_query($act);
           }
       }
-    }*/
-  
-  //header('Location: index.php');
+    }
+    
+    copy($dirar, $dirpegar);
+
+  header('Location: index.php');
 
 ?>
