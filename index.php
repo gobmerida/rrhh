@@ -33,6 +33,21 @@
 
 </head>
 <body>
+<!-- script para botones de facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--script para botones de twitter  -->
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
 	<header>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
@@ -108,7 +123,7 @@
 
 			</div>
 			<dvi class="col-sm-2 col-md-2">
-
+				<div class="fb-comment-embed color" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="290" data-include-parent="true"></div>
 			</dvi>
 		</div>
 		<div class="col-sm-2 col-md-2"></div>
@@ -129,10 +144,15 @@
 		<div class="col-sm-2 col-md-2"></div>
 
 	</div>
-
-	<footer>
-			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b>
+	
+	<footer class="col-sm-12 col-md-12">
+			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br><br>
+			<a href="https://twitter.com/rrhh_gob_merida" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
+			<div class="fb-follow color" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>
+			
+			
 	</footer>
+
 	<script src="js/jquery-1.12.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/magicslideshow.js"></script>
@@ -186,6 +206,28 @@
 	    $(document).ready(function(){
 	        $('.myCarousel').carousel()
 	    });
+	</script>
+
+	<script>
+	$(document).ready(function(){
+		load(1);
+	});
+
+	function load(page){
+		var parametros = {"action":"ajax","page":page};
+		$("#loader").fadeIn('slow');
+		$.ajax({
+			url:'paises_ajax.php',
+			data: parametros,
+			 beforeSend: function(objeto){
+			$("#loader").html("<img src='loader.gif'>");
+			},
+			success:function(data){
+				$(".outer_div").html(data).fadeIn('slow');
+				$("#loader").html("");
+			}
+		})
+	}
 	</script>
 
 

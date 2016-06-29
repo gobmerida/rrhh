@@ -7,6 +7,16 @@ width: 100%;
 height: 150px;
 }
 
+.fb_iframe_widget{
+	display: inline !important;
+	position: absolute;
+	top: -7%;
+}
+
+.pagination a{
+	color: #B8252A !important;
+}
+
 #form-galeria{
 	margin-bottom: 5%;
 	margin-top: 5%;
@@ -14,7 +24,13 @@ height: 150px;
 	padding: 2%;
 }
 
+.color{
+	background-color: #FFF;
+}
 
+.tamano{
+	width: 10%;
+}
 
 .text{
 	font:normal 20pt Arial !important;
@@ -50,7 +66,6 @@ height: 150px;
 footer {
 	background: #B8252A;
 	color: #FFF;
-	margin-top: 5%;
 	height: 100px;
 	width: 100%;
 	text-align: center;
