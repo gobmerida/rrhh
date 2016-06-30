@@ -48,7 +48,7 @@
 				
 			</dvi>
 			<div class="col-sm-8 col-md-8" >
-				<form action="" class="col-sm-6 col-md-offset-3" id="form-galeria">
+				<form action="Login.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria">
 					<div class="form-group">
 						<label for="">Usuario</label>
 						<input type="text" name="usuario" class="form-control input-lg">
@@ -57,6 +57,7 @@
 						<label for="">Contraseña</label>
 						<input type="password" name="pass" class="form-control input-lg">
 					</div>
+					<input type="hidden" name="submit" value="1">
 					<button type="submit" class="btn btn-danger btn-lg ">Ingresar</button>
 				</form>
 			</div>
@@ -65,8 +66,10 @@
 
 	</div>
 
-	<footer>
-			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b>
+	<footer class="col-sm-12 col-md-12">
+			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br><br>
+			<a href="https://twitter.com/rrhh_gob_merida" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
+			<div class="fb-follow color" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>
 	</footer>
 	<script src="js/jquery-1.12.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -1,10 +1,17 @@
 <?php
 	
 	require_once '../db/conexion.php';
+	
+	$query   = "select * from usuario where Usuario= '$usuario' ";
+	$result  = mysql_query($query);
+	$ingreso = mysql_fetch_array($result);
 
-	if($user!=$row['Usuario'] or md5($pass)!=$row['Pass']){
+	if( isset($user) or isset($pass)){
+
 		header("location: login.php");
-	}
+
+	}else{
+
 	
 ?>
 <!DOCTYPE html>
@@ -90,16 +97,17 @@
 
 	<div class="hidden-xs col-sm-2 col-md-2"></div>
 
-	<footer class="boot">
-		<br>
-		<br>
-		<div class="container ">
-			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b>
-		</div>
-		<br>
+	<footer class="col-sm-12 col-md-12">
+			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br><br>
+			<a href="https://twitter.com/rrhh_gob_merida" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
+			<div class="fb-follow color" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>
+			
+			
 	</footer>
 	<script src="../js/jquery-1.12.3.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/magicslideshow.js"></script>
 </body>
 </html>
+
+<?php } ?>
