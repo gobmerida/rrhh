@@ -128,24 +128,25 @@
         </div>
       </dvi>
       <div class="col-sm-8 col-md-8" id="main">
-
+      <table class="table">
+      <tr>
           <?php
               while ($array = mysql_fetch_array($cad))
 
               { ?>
-                <div class="col-sm-4 col-md-4">
-                    <div class="thumbnail">
-                      <div class="caption text-justify">
-                        <h4><b><?php echo $array[1]; ?></b></h4>
-                        <img src="<?php echo 'update/img/'.$array[6]; ?>" alt="" class="imgnot">
-                        <p><?php echo substr($array[2], 0,250)."...."; $array[2];  ?></p>
-                        <a href="noticiasf.php?id=<?php echo $array[0]; ?>" class="btn btn-danger" roll="boton  ">
+                
+                  <td class="caption text-justify color">
+                    <h4><b><?php echo $array[1]; ?></b></h4><br>
+                    <img src="<?php echo 'update/img/'.$array[6]; ?>" alt="" class="imgnot">
+                    <p><?php echo substr($array[2], 0,250)."...."; $array[2];  ?></p><br>
+                    <a href="noticiasf.php?id=<?php echo $array[0]; ?>" class="btn btn-danger" roll="boton  ">
                             Leer mas</a>
-                      </div>
-                    </div>
-                </div>
+                  </td><td></td>
+                
 
           <?php }
+
+          echo "</tr> </table>";
           //creando los enlaces de paginacion de resultados
 
               echo "<center> <nav><ul class='pagination pagination-lg'>";
@@ -191,12 +192,11 @@
               }
               } echo "</ul>
             </nav> </center>";
-
               ?>
       </div>
 
         <dvi class="col-sm-2 col-md-2">
-            <div class="fb-comment-embed color" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="290" data-include-parent="true"></div>
+            <div class="fb-comment-embed" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="250" data-include-parent="true"></div>
           </dvi>
         </div>
         <div class="col-sm-2 col-md-2"></div>
