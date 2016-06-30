@@ -126,6 +126,17 @@
             <a class="twitter-timeline enlace-twitter" style="z-index: 2;" width="240" height="320" data-theme="light" data-link-color="#0084b4" data-chrome="   " data-border-color="#e8e8e8" data-tweet-limit="0" data-related="" data-screen-name="rrhh_gob_merida" data-show-replies="false" data-aria-polite="Polite" lang="ES" href="https://twitter.com/rrhh_gob_merida" data-widget-id="332093127265484800"><img src="./img/loading.gif" style="width:8%"> Cargando Twitter</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+        <marquee class="hidden-xs marq" direction="left" scrollamount="4">
+          <a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
+          <a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>
+          <a href="http://www.fundacite-merida.gob.ve/" target="_blank"><img src="img/insti/fundacite.jpg" alt=""></a>
+          <a href="http://www.gobiernoenlinea.ve/home/homeG.dot" target="_blank"><img src="img/insti/gobierno_linea.jpg" alt=""></a>
+          <a href="" target="_blank"><img src="img/insti/logo_merida1.png" alt=""></a>
+          <a href="http://www.ona.gob.ve/"><img src="img/insti/ona.jpg" alt=""></a>
+          <a href="http://www.pcmerida.gob.ve/" target="_blank"><img src="img/insti/pcmerida.jpg" alt=""></a>
+          <a href="http://www.polimer.gob.ve/" target="_blank"><img src="img/insti/polcia.png" alt=""></a>
+          <a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="img/insti/saime.png" alt=""></a>
+        </marquee>
       </dvi>
       <div class="col-sm-8 col-md-8" id="main">
       <table class="table">
@@ -193,32 +204,17 @@
               } echo "</ul>
             </nav> </center>";
               ?>
-      </div>
+      </div><br><br>
 
         <dvi class="col-sm-2 col-md-2">
             <div class="fb-comment-embed" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="250" data-include-parent="true"></div>
           </dvi>
         </div>
-        <div class="col-sm-2 col-md-2"></div>
-        <div class="col-sm-8 col-md-8">
-          <marquee class="hidden-xs" direction="left" scrollamount="4">
-              <a href=""><img src="img/insti/171.png" alt=""></a>
-              <a href=""><img src="img/insti/bomberos.png" alt=""></a>
-              <a href=""><img src="img/insti/fundacite.jpg" alt=""></a>
-              <a href=""><img src="img/insti/gobernacion.jpg" alt=""></a>
-              <a href=""><img src="img/insti/gobierno_linea.jpg" alt=""></a>
-              <a href=""><img src="img/insti/logo_merida1.png" alt=""></a>
-              <a href=""><img src="img/insti/ona.jpg" alt=""></a>
-              <a href=""><img src="img/insti/pcmerida.jpg" alt=""></a>
-              <a href=""><img src="img/insti/polcia.png" alt=""></a>
-              <a href=""><img src="img/insti/saime.png" alt=""></a>
-          </marquee>
-        </div>
-        <div class="col-sm-2 col-md-2"></div>
+        
     </div>
   </div>
   
-  <footer class="col-sm-12 col-md-12">
+  <footer>
       <b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br><br>
       <a href="https://twitter.com/rrhh_gob_merida" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
       <div class="fb-follow color" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>

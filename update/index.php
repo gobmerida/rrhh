@@ -1,15 +1,13 @@
-<?php
-	
+<?php 
+session_start();
+@$nombre  = $_SESSION['name'];
+@$usuario = $_SESSION['usr'];
+
 	require_once '../db/conexion.php';
+
 	
-	$query   = "select * from usuario where Usuario= '$usuario' ";
-	$result  = mysql_query($query);
-	$ingreso = mysql_fetch_array($result);
-
-	if( isset($user) or isset($pass)){
-
-		header("location: login.php");
-
+	if(!isset($nombre)){
+		echo "<script>alert('Debe registrarse para ver el contenido de esta pagina.');window.location='login.php';</script>"; /* Si no ha iniciado la sesion, vamos a user.php */
 	}else{
 
 	
@@ -42,9 +40,13 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
-			        <li class="active"><a href="/rrhh/">Inicio <span class="sr-only">(current)</span></a></li>
-			        <li><a href="../">Salir <span class="sr-only">(current)</span></a></li>
-
+			        
+					<li class="dropdown">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $nombre; ?><span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				           	<li><a href="logaout.php" class="reseña">Salir</a></li>
+				        </ul>
+			        </li>
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -70,7 +72,7 @@
 							<textarea type="text" id="contenido" name="contenido" class="form-control" autocomplete="off" rows="10"></textarea>
 						</div>
 
-						<div class="form-grup">
+						<div class="form-group">
 							<label>Foto</label>
 							<input type="file" id="imagen" name="imagen"/>
 						</div>
@@ -84,11 +86,9 @@
 							</select>
 						</div>
 
-						<?php
-							$QuienPublica = $_SESSION['IdRol_pagerrhh'];
-							echo "<input type='hidden' name='quienp' id='quienp' value='$QuienPublica'/>";
-						?>
-						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center>
+						<input type='hidden' name='quienp' id='quienp' value='<?php echo $nombre; ?>'/><br>
+					
+						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center><br>
 
 					</form>
 				</div>
@@ -97,7 +97,7 @@
 
 	<div class="hidden-xs col-sm-2 col-md-2"></div>
 
-	<footer class="col-sm-12 col-md-12">
+		<footer>
 			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br><br>
 			<a href="https://twitter.com/rrhh_gob_merida" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
 			<div class="fb-follow color" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>

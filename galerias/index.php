@@ -1,17 +1,12 @@
 <?php
+session_start();
+@$nombre  = $_SESSION['name'];
+@$usuario = $_SESSION['usr'];
 
-	require_once '../db/conexion.php';
-
-	$query   = "select * from usuario where Usuario= '$usuario' ";
-	$result  = mysql_query($query);
-	$ingreso = mysql_fetch_array($result);
-
-	if( isset($user) or isset($pass)){
-
-		header("location: login.php");
-
+	if(!isset($nombre)){
+		echo "<script>alert('No tienes derecho a ver esta pagína');window.location='login.php';</script>"; /* Si no ha iniciado la sesion, vamos a user.php */
 	}else{
-
+	require_once '../db/conexion.php';	
 
 ?>
 <!DOCTYPE html>

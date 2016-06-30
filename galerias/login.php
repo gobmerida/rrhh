@@ -1,19 +1,6 @@
 <?php
 
 	require_once '../db/conexion.php';
-
-		$query   = "select * from usuario where Usuario= '$usuario' ";
-		$result  = mysql_query($query);
-		$ingreso = mysql_fetch_array($result);
-
-	if( isset($user) or isset($pass)){
-
-		header("location: login.php");
-
-	}
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="es">

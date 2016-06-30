@@ -20,8 +20,7 @@ height: 150px;
 
 
 #form-galeria{
-	margin-bottom: 5%;
-	margin-top: 5%;
+	margin-top: 10%;
 	background-color: #ffffff;
 	padding: 2%;
 }
@@ -64,6 +63,13 @@ height: 150px;
 	background-color: #fff;
 }
 
+.row{
+	margin-top: -3% !important;
+}
+
+.marq{
+	margin-top: 10%;
+}
 
 footer {
 	background: #B8252A;
@@ -72,6 +78,9 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding: 1%;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
 }
 
 .nav-pills-stacked {
@@ -241,4 +250,14 @@ margin-left: -50px;
   opacity: 0.7;
   box-shadow: 0 0 15px #000;
   border-radius: 6px;
+}
+
+.usuario{
+	float: left;
+	position: fixed;
+	top: -10px;
+	left: 85%;
+	padding: 1%;
+	color: #FFF;
+	font-size: 20px;
 }
