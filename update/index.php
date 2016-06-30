@@ -9,7 +9,7 @@ session_start();
 	if(!isset($nombre)){
 		echo "<script>alert('Debe registrarse para ver el contenido de esta pagina.');window.location='login.php';</script>"; /* Si no ha iniciado la sesion, vamos a user.php */
 	}else{
-
+		extract($_GET);
 	
 ?>
 <!DOCTYPE html>
@@ -85,6 +85,11 @@ session_start();
 								<option value="1">Otras</option>
 							</select>
 						</div>
+						<?php if (@$q==1) { ?>
+						<div class="alert alert-success" role="alert">Noticia generada con exito</div>
+						<?php }elseif (@$q==2) { ?>
+							<div class="alert alert-success" role="alert">ERROR: no se pudo generar la noticia</div>
+						<?php } ?>
 
 						<input type='hidden' name='quienp' id='quienp' value='<?php echo $nombre; ?>'/><br>
 					

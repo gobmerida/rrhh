@@ -9,15 +9,20 @@ session_start();
 	$result  = mysql_query($query);
 	$usuario = mysql_fetch_array($result);
 
+	$query2   = "select count(*) from usuario where Usuario='$usuario'";
+	$result2  = mysql_query($query2);
+	$count = mysql_fetch_array($result2);
+
 	$nombre  = $usuario['Nombres'];
 	$user    = $usuario['Usuario'];
 
 	if (isset($_POST) && isset($submit)) {
 		
-		if ($usuario=="" || $pass=="") {
-			echo "<script>alert('No ingreso ningun dato');window.location='login.php';</script>";
+		if (empty($usuario) || empty($pass)) {
+			header ("Location: login.php?q=1");
+		}elseif ($usuario !=$usuario['Usuario'] || md5($pass)!=$usuario['Pass']) {
+			header ("Location: login.php?q=2");
 		}else{
-
 			$_SESSION['name']=$nombre;
 			$_SESSION['usr']=$user;
 			echo "<script>window.location='index.php';</script>";

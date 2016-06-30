@@ -1,6 +1,6 @@
 <?php
 
-	require_once '../db/conexion.php';
+	extract($_GET);
 
 ?>
 <!DOCTYPE html>
@@ -51,14 +51,21 @@
 				<form action="Login.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria">
 					<div class="form-group">
 						<label for="">Usuario</label>
-						<input type="text" name="usuario" class="form-control input-lg" required>
+						<input type="text" name="usuario" class="form-control input-lg" >
 					</div>
 					<div class="form-group">
 						<label for="">Contraseña</label>
-						<input type="password" name="pass" class="form-control input-lg" required>
+						<input type="password" name="pass" class="form-control input-lg" >
 					</div>
+					<?php if (@$q==1) { ?>
+						<div class="alert alert-danger" role="alert">ERROR: Debe ingresar los datos</div>
+					<?php }elseif (@$q==2) { ?>
+						<div class="alert alert-danger" role="alert">ERROR: Usuario no registrado en nuestra base de datos</div>
+					<?php } ?>
+					
 					<input type="hidden" name="submit" value="1">
 					<center><button type="submit" class="btn btn-danger btn-lg ">Ingresar</button></center>
+
 				</form>
 			</div>
 			<dvi class="col-sm-2 col-md-2"></dvi>
