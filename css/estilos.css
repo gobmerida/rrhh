@@ -1,6 +1,5 @@
 body {
 	background: #EBEBEB;
-	overflow-y: hidden;
 }
 .jumbotron img {
 
@@ -84,13 +83,13 @@ height: 150px;
 }
 
 .marq{
-	margin-top: 10%;
+	margin-top: -10%;
 }
 
 footer {
 	background: #B8252A;
 	color: #FFF;
-	height: 100px;
+	height: 70px;
 	width: 100%;
 	text-align: center;
 	padding: 1%;

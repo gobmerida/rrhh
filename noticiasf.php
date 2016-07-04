@@ -11,6 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
+  <link rel="shortcut icon" href="img/icono.png" type="image/ico" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -63,7 +64,7 @@
   		</div><!-- /.container-fluid -->
 	</nav>
       <div class="jumbotron">
-      <img src="img/header3.png" class="img-responsive" alt="">
+      <img src="img/header4.jpg" class="img-responsive" alt="">
       </div>
 
   </header>
@@ -114,13 +115,10 @@
 		<div class="col-sm-2 col-md-2"></div>
   </div>
 
-  <footer class="boot">
-    <br>
-    <br>
-    <div class="container ">
-      <b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b>
-    </div>
-    <br>
+ <footer >
+      <b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br>
+      <a href="https://twitter.com/rrhh_gob_merida" target="_blank" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
+      <div class="fb-follow color" target="_blank" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>
   </footer>
   <script src="js/jquery-1.12.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

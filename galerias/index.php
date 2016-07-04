@@ -16,6 +16,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="viewport" content="width=960">
 	<title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
+	<link rel="shortcut icon" href="../img/icono.png" type="image/ico" />
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/estilos.css">
 
@@ -46,7 +47,7 @@ session_start();
   		</div><!-- /.container-fluid -->
 	</nav>
 			<div class="jumbotron">
-					<img src="../img/header3.png" class="img-responsive" alt="">
+					<img src="../img/header4.jpg" class="img-responsive" alt="">
 			</div>
 	</header>
 	<div class="container-fluid">
@@ -64,6 +65,7 @@ session_start();
               </div>
               <button type="submit" class="btn btn-danger btn-sm">Guardar galeria</button>
           </form>
+          
 			</div>
 			<dvi class="col-sm-2 col-md-2"></dvi>
 		</div>
