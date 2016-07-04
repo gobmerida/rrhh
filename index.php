@@ -134,7 +134,7 @@
 
 			</div>
 			<dvi class="col-sm-2 col-md-2">
-				<div class="fb-comment-embed color" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="250" data-include-parent="true"></div>
+				<div class="fb-comment-embed" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="250" data-include-parent="true"></div>
 			</dvi>
 		</div>
 		

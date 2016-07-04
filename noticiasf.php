@@ -1,3 +1,10 @@
+<?php 
+
+  require_once 'db/conexion.php';
+              extract($_GET);
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -68,11 +75,22 @@
             <a class="twitter-timeline enlace-twitter" style="z-index: 2;" width="240" height="320" data-theme="light" data-link-color="#0084b4" data-chrome="   " data-border-color="#e8e8e8" data-tweet-limit="0" data-related="" data-screen-name="rrhh_gob_merida" data-show-replies="false" data-aria-polite="Polite" lang="ES" href="https://twitter.com/rrhh_gob_merida" data-widget-id="332093127265484800"><img src="./img/loading.gif" style="width:8%"> Cargando Twitter</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+        <marquee class="hidden-xs" direction="right" scrollamount="4">
+          <a href=""><img src="img/insti/171.png" alt=""></a>
+          <a href=""><img src="img/insti/bomberos.png" alt=""></a>
+          <a href=""><img src="img/insti/fundacite.jpg" alt=""></a>
+          <a href=""><img src="img/insti/gobernacion.jpg" alt=""></a>
+          <a href=""><img src="img/insti/gobierno_linea.jpg" alt=""></a>
+          <a href=""><img src="img/insti/logo_merida1.png" alt=""></a>
+          <a href=""><img src="img/insti/ona.jpg" alt=""></a>
+          <a href=""><img src="img/insti/pcmerida.jpg" alt=""></a>
+          <a href=""><img src="img/insti/polcia.png" alt=""></a>
+          <a href=""><img src="img/insti/saime.png" alt=""></a>
+      </marquee>
       </div>
       <div class="col-sm-8 col-md-8" id="main">
           <?php
-              require_once 'db/conexion.php';
-              extract($_GET);
+              
               $ids=$id;
 
               $sql   = "select * from data02 where id='$ids' order by FechaPublicacion ";
@@ -93,21 +111,6 @@
       </div>
       <div class="hidden-xs col-sm-2 col-md-2"></div>
     </div>
-    <div class="col-sm-2 col-md-2"></div>
-		<div class="col-sm-8 col-md-8">
-			<marquee class="hidden-xs" direction="right" scrollamount="4">
-					<a href=""><img src="img/insti/171.png" alt=""></a>
-					<a href=""><img src="img/insti/bomberos.png" alt=""></a>
-					<a href=""><img src="img/insti/fundacite.jpg" alt=""></a>
-					<a href=""><img src="img/insti/gobernacion.jpg" alt=""></a>
-					<a href=""><img src="img/insti/gobierno_linea.jpg" alt=""></a>
-					<a href=""><img src="img/insti/logo_merida1.png" alt=""></a>
-					<a href=""><img src="img/insti/ona.jpg" alt=""></a>
-					<a href=""><img src="img/insti/pcmerida.jpg" alt=""></a>
-					<a href=""><img src="img/insti/polcia.png" alt=""></a>
-					<a href=""><img src="img/insti/saime.png" alt=""></a>
-			</marquee>
-		</div>
 		<div class="col-sm-2 col-md-2"></div>
   </div>
 

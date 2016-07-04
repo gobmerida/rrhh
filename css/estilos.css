@@ -1,5 +1,6 @@
 body {
 	background: #EBEBEB;
+	overflow-y: hidden;
 }
 .jumbotron img {
 
@@ -16,6 +17,21 @@ height: 150px;
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
 	background-color: #B8252A !important;
 	border-color: #B8252A !important;
+}
+
+#titulo{
+	margin-top: 17%;
+	margin-right: -10%;
+	float: left;
+	font-weight: 20px;
+}
+
+#titulo h4{
+	padding: 3%;
+	font-weight: 20px;
+	background-color: #d9534f;
+	color: #FFF;
+	width: 100%;
 }
 
 
@@ -235,10 +251,7 @@ margin-left: -50px;
 }
 
 
-.wrapper div {
 
-  width:100%;
-}
  .wrapper img {
   width:20%;
   height:200px;
@@ -248,8 +261,6 @@ margin-left: -50px;
 
 .wrapper  img:hover{
   opacity: 0.7;
-  box-shadow: 0 0 15px #000;
-  border-radius: 6px;
 }
 
 .usuario{
@@ -260,4 +271,9 @@ margin-left: -50px;
 	padding: 1%;
 	color: #FFF;
 	font-size: 20px;
+}
+
+
+.fb-comment-embed{
+	background-color: #FFF !important;
 }
