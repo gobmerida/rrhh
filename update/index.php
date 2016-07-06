@@ -1,16 +1,28 @@
 <?php 
+session_name("loginUsuario");
 session_start();
-@$nombre  = $_SESSION['name'];
-@$usuario = $_SESSION['usr'];
 
-	require_once '../db/conexion.php';
+//antes de hacer los cálculos, compruebo que el usuario está logueado
+//utilizamos el mismo script que antes
+if ($_SESSION["autentificado"] != "SI") {
+    //si no está logueado lo envío a la página de autentificación
+    header("Location: login.php");
+} else {
+    //sino, calculamos el tiempo transcurrido
+    $fechaGuardada = $_SESSION["ultimoAcceso"];
+    $ahora = date("Y-n-j H:i:s");
+    $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
 
-	
-	if(!isset($nombre)){
-		echo "<script>alert('Debe registrarse para ver el contenido de esta pagina.');window.location='login.php';</script>"; /* Si no ha iniciado la sesion, vamos a user.php */
-	}else{
-		extract($_GET);
-	
+    //comparamos el tiempo transcurrido
+     if($tiempo_transcurrido >= 100) {
+     //si pasaron 10 minutos o más
+      session_destroy(); // destruyo la sesión
+      header("Location: login.php"); //envío al usuario a la pag. de autenticación
+      //sino, actualizo la fecha de la sesión
+    }else {
+    $_SESSION["ultimoAcceso"] = $ahora;
+   }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -43,7 +55,7 @@ session_start();
 		    	<ul class="nav navbar-nav">
 			        
 					<li class="dropdown">
-				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $nombre; ?><span class="caret"></span></a>
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['name']; ?><span class="caret"></span></a>
 				        <ul class="dropdown-menu">
 				           	<li><a href="logaout.php" class="reseña">Salir</a></li>
 				        </ul>
@@ -113,5 +125,3 @@ session_start();
 	<script src="../js/magicslideshow.js"></script>
 </body>
 </html>
-
-<?php } ?>

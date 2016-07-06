@@ -2,9 +2,10 @@
 session_start();
 @$nombre  = $_SESSION['name'];
 @$usuario = $_SESSION['usr'];
+extract($_GET);
 
 	if(!isset($nombre)){
-		echo "<script>alert('No tienes derecho a ver esta pagína');window.location='login.php';</script>"; /* Si no ha iniciado la sesion, vamos a user.php */
+		echo "<script>window.location='login.php';</script>"; /* Si no ha iniciado la sesion, vamos a user.php */
 	}else{
 	require_once '../db/conexion.php';	
 
@@ -68,6 +69,11 @@ session_start();
                   <label for="foto">Fotos del album</label>
                   <input type="file" name="foto[]" value="Subir foto"  multiple="multiple">
               </div>
+              <?php if (@$q==1) { ?>
+						<div class="alert alert-success" role="alert">Galeria creada correctamente</div>
+					<?php }elseif (@$q==2) { ?>
+						<div class="alert alert-danger" role="alert">ERROR: Usuario no registrado en nuestra base de datos</div>
+					<?php } ?>
               <button type="submit" class="btn btn-danger btn-sm">Guardar galeria</button>
           </form>
           

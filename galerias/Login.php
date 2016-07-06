@@ -9,17 +9,14 @@ session_start();
 	$result  = mysql_query($query);
 	$usuario = mysql_fetch_array($result);
 
-	$nombre  = $usuario['Nombres'];
-	$user    = $usuario['Usuario'];
-
 	if (isset($_POST) && isset($submit)) {
 		
 		if ($usuario=="" || $pass=="") {
 			echo "<script>alert('No ingreso ningun dato');window.location='login.php';</script>";
 		}else{
 
-			$_SESSION['name']=$nombre;
-			$_SESSION['usr']=$user;
+			$_SESSION['name']=$usuario['Nombres'];
+			$_SESSION['usr']=$usuario['Usuario'];
 			echo "<script>window.location='index.php';</script>";
 		}
 	}

@@ -60,7 +60,7 @@
 					<?php if (@$q==1) { ?>
 						<div class="alert alert-danger" role="alert">ERROR: Debe ingresar los datos</div>
 					<?php }elseif (@$q==2) { ?>
-						<div class="alert alert-danger" role="alert">ERROR: Usuario no registrado en nuestra base de datos</div>
+						<div class="alert alert-danger" role="alert">ERROR: Usuario no registrado en el sistema</div>
 					<?php } ?>
 					
 					<input type="hidden" name="submit" value="1">

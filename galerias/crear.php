@@ -42,6 +42,6 @@
     
     copy($dirar, $dirpegar);
 
-  header('Location: index.php');
+  header('Location: index.php?q=1');
 
 ?>

@@ -85,9 +85,9 @@
 			        <li class="dropdown">
 				        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Constancias y Recibos<span class="caret"></span></a>
 				        <ul class="dropdown-menu">
-				           	<li><a href="#">Constancias y Recibos</a></li>
+				           	<li><a href="/constancias/">Constancias y Recibos</a></li>
 				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Verificar Constancia</a></li>
+				            <li><a href="/constancias/verificar.php">Verificar Constancia</a></li>
 				        </ul>
 			        </li>
 
@@ -122,7 +122,7 @@
 				      <a href="javascript:void();" class="menos">&lsaquo;</a>
 				  </div>
 
-				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start()" onmouseover="this.stop() scrollamount="4">
+				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
 					<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
 					<a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>
 					<a href="http://www.fundacite-merida.gob.ve/" target="_blank"><img src="img/insti/fundacite.jpg" alt=""></a>
@@ -132,7 +132,7 @@
 					<a href="http://www.pcmerida.gob.ve/" target="_blank"><img src="img/insti/pcmerida.jpg" alt=""></a>
 					<a href="http://www.polimer.gob.ve/" target="_blank"><img src="img/insti/polcia.png" alt=""></a>
 					<a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="img/insti/saime.png" alt=""></a>
-	</marquee>
+				</marquee><br><br><br>
 			</div>
 			
 				<div class="hidden-xs hidden-sm visible-md-inline visible-lg-inline col-md-2">

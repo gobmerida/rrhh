@@ -32,7 +32,7 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
-			        <li><a href="index.php">Inicio <span class="sr-only">(current)</span></a></li>
+			        <li><a href="../index.php">Inicio <span class="sr-only">(current)</span></a></li>
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -50,11 +50,11 @@
 				<form action="Login.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria">
 					<div class="form-group">
 						<label for="">Usuario</label>
-						<input type="text" name="usuario" class="form-control input-lg">
+						<input type="text" name="usuario" class="form-control input-lg" autocomplete="off">
 					</div>
 					<div class="form-group">
 						<label for="">Contraseña</label>
-						<input type="password" name="pass" class="form-control input-lg">
+						<input type="password" name="pass" class="form-control input-lg" autocomplete="off">
 					</div>
 					<input type="hidden" name="submit" value="1">
 					<button type="submit" class="btn btn-danger btn-lg ">Ingresar</button>
