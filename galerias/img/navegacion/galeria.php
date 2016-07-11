@@ -7,14 +7,14 @@
 
 ?>
 
-<div class="wrapper">
+<div class=" wrapper ">
     <div>
       <?php
             while ($galeria = mysql_fetch_array($result)) {
                 $rout ="../../../galerias/img/".$galeria[1]."/".$galeria[2];
                 $rout2 ="../../../galerias/img/".$galeria[1]."/index.php?id=".$galeria[1];
       ?>
-               <div class="imagen"><a href="<?php echo $rout2; ?>"><img src="<?php echo $rout; ?>" title="<?php echo ucwords($galeria[1]); ?>"/></a><br>
+               <div class=" imagen "><a href="<?php echo $rout2; ?>"><img src="<?php echo $rout; ?>" title="<?php echo ucwords($galeria[1]); ?>"/></a><br>
                 <div class="titulo"><?php echo ucwords($galeria[1]); ?></div></div>
 
 

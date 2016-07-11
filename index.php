@@ -1,5 +1,5 @@
 <?php
-
+ header("Content-Type:text/html;charset=utf-8");
 	require_once 'db/conexion.php';
 
 	$query = "select max(id) from data02";
@@ -23,7 +23,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="viewport" content="width=960">
 	<title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
@@ -122,7 +122,7 @@
 				      <a href="javascript:void();" class="menos">&lsaquo;</a>
 				  </div><br>
 
-				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
+				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop(); scrollamount="4">
 					<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
 					<a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>
 					<a href="http://www.fundacite-merida.gob.ve/" target="_blank"><img src="img/insti/fundacite.jpg" alt=""></a>

@@ -80,7 +80,7 @@
   		</div><!-- /.container-fluid -->
 	</nav>
 			<div class="jumbotron">
-					<img src="img/header3.png" class="img-responsive" alt="">
+					<img src="img/header4.jpg" class="img-responsive" alt="">
 			</div>
 	</header>
 	<div class="container-fluid">
@@ -92,7 +92,7 @@
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</dvi>
-			<div class="col-sm-8 col-md-8" id="main">
+			<div class=" col-xs-12 col-sm-12 col-md-8" id="main">
 					<div id="slider-wrapper">
 				      <div id="slider">
 				        <a href="noticiasf.php?id=<?php echo $resnot[0]; ?>"><img src="update/img/<?php echo $resnot[6]; ?>" /><p ><?php echo "<span class='text'>". ucwords($resnot[1])."</span></br><span class='text2'>".substr($resnot[2], 0, 100)."...</span>"; ?></p></a>

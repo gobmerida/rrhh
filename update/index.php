@@ -22,6 +22,8 @@ if ($_SESSION["autentificado"] != "SI") {
     }else {
     $_SESSION["ultimoAcceso"] = $ahora;
    }
+
+   extract($_GET);
 }
 ?>
 <!DOCTYPE html>
@@ -98,16 +100,16 @@ if ($_SESSION["autentificado"] != "SI") {
 								<option value="0">De RRHH</option>
 								<option value="1">Otras</option>
 							</select>
-						</div>
+						</div><br>
 						<?php if (@$q==1) { ?>
-						<div class="alert alert-success" role="alert">Noticia generada con exito</div>
+						<div class="alert alert-success" role="alert">Noticia generada con exito </div>
 						<?php }elseif (@$q==2) { ?>
 							<div class="alert alert-success" role="alert">ERROR: no se pudo generar la noticia</div>
 						<?php } ?>
 
 						<input type='hidden' name='quienp' id='quienp' value='<?php echo $nombre; ?>'/><br>
 					
-						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center><br>
+						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center>
 
 					</form>
 				</div>

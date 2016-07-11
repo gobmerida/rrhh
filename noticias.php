@@ -1,17 +1,11 @@
 <?php
-    
     header("Content-Type:text/html;charset=utf-8");
+    
     //conexion a la base de datos
-    $host="localhost";
-    $user="root";
-    $pass="infor1234";
-    $db="PaginaMeridaGob_rrhh";
-    $tabla="data02";
+    require_once 'db/conexion.php';
 
     //conectamos con la base de datos
 
-    $con=mysql_connect($host,$user,$pass);
-    mysql_select_db($db,$con);
 
     //establecemos condiciones de paginacion
     $registros = 3;
@@ -29,13 +23,13 @@
     }
 
     //realizamos la busqueda en la base de datos
-    $pegar = "SELECT * FROM $tabla ORDER BY FechaPublicacion LIMIT ".$inicio." , ".$registros." ";
-    $cad = mysql_query($pegar,$con) or die ( 'error al listar, $pegar' .mysql_errno());
+    $pegar = "SELECT * FROM data02 ORDER BY id DESC LIMIT ".$inicio." , ".$registros." ";
+    $cad = mysql_query($pegar) or die ( 'error al listar, $pegar' .mysql_errno());
 
     //calculamos las paginas a mostrar
 
-    $contar = "SELECT * FROM $tabla";
-    $contarok = mysql_query($contar,$con);
+    $contar = "SELECT * FROM data02";
+    $contarok = mysql_query($contar);
     $total_registros = mysql_num_rows($contarok);
     //$total_paginas = ($total_registros / $registros);
     $total_paginas = ceil($total_registros / $registros);
@@ -86,7 +80,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
               <li><a href="index.php">Inicio <span class="sr-only">(current)</span></a></li>
-              <li><a href="#" class="noticias">Noticias</a></li>
+              <li><a href="noticias.php" class="noticias">Noticias</a></li>
               <li><a href="#" class="galeria">Galeria</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros<span class="caret"></span></a>
@@ -129,22 +123,24 @@
         </div>
         
       </dvi>
-      <div class="col-sm-8 col-md-8" id="main">
-        <table class="table">
+      <div class="col-sm-8 col-md-8 " id="main">
+        <table class="table ">
         <tr>
           <?php
               while ($array = mysql_fetch_array($cad))
 
               { ?>
-                
-                  <td class="caption text-justify color">
-                    <h4><b><?php echo $array[1]; ?></b></h4><br>
-                    <img src="<?php echo 'update/img/'.$array[6]; ?>" alt="" class="imgnot">
-                    <p class="hidden-xs"><?php echo substr($array[2], 0,250)."...."; $array[2];  ?></p><br>
-                    <a href="noticiasf.php?id=<?php echo $array[0]; ?>" class="btn btn-danger" roll="boton  ">
-                            Leer mas</a>
-                  </td><td></td>
-                
+                  <div class="col-sm-12 col-md-4">
+                    <div class="thumbnail">
+                      <div class="caption text-justify">
+                        <h4><b><?php echo $array[1]; ?></b></h4>
+                          <img src="<?php echo 'update/img/'.$array[6]; ?>" alt="" class="imgnot">
+                          <p><?php echo substr($array[2], 0,250)."...."; $array[2];  ?></p>
+                          <a href="noticiasf.php?id=<?php echo $array[0]; ?>" class="btn btn-danger" roll="boton  ">
+                          Leer mas</a>
+                      </div>
+                    </div>
+                  </div>      
 
           <?php }
 

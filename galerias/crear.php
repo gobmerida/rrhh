@@ -10,8 +10,7 @@
     $dirpegar = "img/".$nombre."/index.php";
     $dirar = "iGaleria.php";
 
-
-    $query  = "insert into galeria (`nombreDIR`, `fotoDIR`) values ('$nombre','$archivo')";
+    $query  = "insert into galeria (`nombreDIR`, `fotoDIR`, fecha_creacion) values ('$nombre','$archivo')";
     $res = mysql_query($query) or die(mysql_error());
 
     

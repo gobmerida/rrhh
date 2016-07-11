@@ -1,5 +1,6 @@
 body {
 	background: #EBEBEB;
+	font-family: 'MS Serif', 'New York', sans-serif;
 }
 .jumbotron img {
 
@@ -17,6 +18,12 @@ height: 150px;
 	background-color: #B8252A !important;
 	border-color: #B8252A !important;
 }
+
+.caption img{
+	border-radius: 10px;
+	height: 100px;
+}
+
 
 #titulo{
 	margin-top: 17%;
@@ -108,7 +115,7 @@ footer {
 }
 
 /*Seccion de noticias*/
-.caption img{
+.thumbnail img{
 	width: 100%;
 	height: 250px;
 	margin-bottom: 5%;
@@ -231,12 +238,14 @@ margin-left: -50px;
 .timeline-twitt{
 	border-radius: 1px solid red;
 	background-color: #ffffff;
+	width: 240px;
 }
 
 .h{
 	background-color: #d9534f;
 	color: #FFF;
 	padding: 5%;
+	width: 240px;
 }
 
 /*funcions*/
@@ -306,5 +315,15 @@ margin-left: -50px;
 #g_noticia{
 	background-color: #FFFFFF;
 	padding: 15px;
+	margin-bottom: 15%;
 }
 /*ENDFORMULARIONOTICIA*/
+
+.thumbnail{
+	max-height: 600px;
+	min-height: 550px;
+}
+.thumbnail2{
+	max-height: 600px;
+	min-height: 300px;
+}

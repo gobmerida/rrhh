@@ -48,7 +48,7 @@
 				
 			</dvi>
 			<div class="col-sm-8 col-md-8" >
-				<form action="Login.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria">
+				<form action="Login.php" method="post" class="col-sm-5 col-md-offset-3" id="form-galeria">
 					<div class="form-group">
 						<label for="">Usuario</label>
 						<input type="text" name="usuario" class="form-control input-lg" autocomplete="off">
