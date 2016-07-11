@@ -19,6 +19,7 @@
     umask(011);
     mkdir("img/".$_POST["nombre"], 0777);
     chmod("img/".$_POST["nombre"], 0777);
+    chmod("var/www/", 0777);
 
     if(isset($_FILES['foto'])){
 

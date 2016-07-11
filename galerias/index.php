@@ -63,11 +63,11 @@ extract($_GET);
           <form action="crear.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria" enctype="multipart/form-data">
               <div class="form-group">
                   <label for="nombre">Nombre de la galeria</label>
-                  <input type="text" name="nombre" class="form-control input-lg" placeholder="Nombre de la galeria" autocomplete="off">
+                  <input type="text" name="nombre" class="form-control input-lg" placeholder="Nombre de la galeria" autocomplete="off" required>
               </div>
               <div class="form-group">
                   <label for="foto">Fotos del album</label>
-                  <input type="file" name="foto[]" value="Subir foto"  multiple="multiple">
+                  <input type="file" name="foto[]" value="Subir foto"  multiple="multiple" required>
               </div>
               <?php if (@$q==1) { ?>
 						<div class="alert alert-success" role="alert">Galeria creada correctamente</div>

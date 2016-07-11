@@ -29,6 +29,7 @@ if ($_SESSION["autentificado"] != "SI") {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="refresh" content="300" />
 	<title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
 	<link rel="shortcut icon" href="../img/icono.png" type="image/ico" />
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -73,9 +74,9 @@ if ($_SESSION["autentificado"] != "SI") {
 
 	<div class="col-sm-8 col-md-8" id="main">
 			<div class="hidden-xs col-sm-3 col-md-3"></div>
-				<div class="col-sm-6	 col-md-6	">
+				<div class="col-sm-6 col-md-6">
 
-					<form id='g_noticia' enctype="multipart/form-data" method="post"  onsubmit="return validar(this);" action="recepcion.php">
+					<form id='g_noticia' enctype="multipart/form-data" method="post"  onsubmit="return validar(this);" action="recepcion.php" class="col-sm-12 ">
 						<div class="form-group">
 							<label for="">Título</label>
 							<input type="text" name="titulo" id="titulo_no" class="form-control" autocomplete="off" />

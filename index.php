@@ -120,7 +120,7 @@
 
 				      <a href="javascript:void();" class="mas">&rsaquo;</a>
 				      <a href="javascript:void();" class="menos">&lsaquo;</a>
-				  </div>
+				  </div><br>
 
 				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
 					<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>

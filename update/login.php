@@ -51,7 +51,7 @@
 				<form action="Login.php" method="post" class="col-sm-6 col-md-offset-3" id="form-galeria">
 					<div class="form-group">
 						<label for="">Usuario</label>
-						<input type="text" name="usuario" class="form-control input-lg" >
+						<input type="text" name="usuario" class="form-control input-lg" autocomplete="off">
 					</div>
 					<div class="form-group">
 						<label for="">Contraseña</label>
