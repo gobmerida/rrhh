@@ -80,12 +80,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
               <li><a href="index.php">Inicio <span class="sr-only">(current)</span></a></li>
-              <li><a href="noticias.php" class="noticias">Noticias</a></li>
-              <li><a href="#" class="galeria">Galeria</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Nosotros<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quienes somos<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="reseña">Reseña Historica</a></li>
+                    <li><a href="#" class="reseña">Reseña Histórica</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#" class="myv">Misión Y visión</a></li>
                      <li role="separator" class="divider"></li>
@@ -94,16 +92,10 @@
                     <li><a href="#" class="funciones">Funciones RRHH</a></li>
                 </ul>
               </li>
-              <li><a href="#" class="contacto">Contacto</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Constancias y Recibos<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Constancias y Recibos</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Verificar Constancia</a></li>
-                </ul>
-              </li>
-
+              <li><a href="noticias.php">Noticias</a></li>
+              <li><a href="#" class="galeria">Galería  </a></li>
+          <li><a href="#" class="contacto">Contacto</a></li>
+            <li><a href="/constancias/">Constancias y Recibos</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -213,7 +205,7 @@
   </div>
   
   <footer >
-      <b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br>
+      <b>Sitio Web Desarrollo y Administrado por el Departamento de Informática de la D.E.P.P. de Recursos Humanos del Estado Mérida. </b><br>
       <a href="https://twitter.com/rrhh_gob_merida" target="_blank" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
       <div class="fb-follow color" target="_blank" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>
   </footer>

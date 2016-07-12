@@ -51,11 +51,11 @@
 				<form action="Login.php" method="post" class="col-sm-5 col-md-offset-3" id="form-galeria">
 					<div class="form-group">
 						<label for="">Usuario</label>
-						<input type="text" name="usuario" class="form-control input-lg" autocomplete="off">
+						<input type="text" name="usuario" class="form-control input-lg" autocomplete="off" maxlength="15">
 					</div>
 					<div class="form-group">
 						<label for="">Contraseña</label>
-						<input type="password" name="pass" class="form-control input-lg" >
+						<input type="password" name="pass" class="form-control input-lg" maxlength="10">
 					</div>
 					<?php if (@$q==1) { ?>
 						<div class="alert alert-danger" role="alert">ERROR: Debe ingresar los datos</div>
