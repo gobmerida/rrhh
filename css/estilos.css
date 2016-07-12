@@ -19,6 +19,10 @@ height: 150px;
 	border-color: #B8252A !important;
 }
 
+.pagination{
+	margin-top: -4%;
+}
+
 .caption img{
 	border-radius: 10px;
 	height: 100px;
