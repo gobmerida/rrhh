@@ -17,7 +17,9 @@ if ($_SESSION["autentificado"] != "SI") {
      if($tiempo_transcurrido >= 100) {
      //si pasaron 10 minutos o más
       session_destroy(); // destruyo la sesión
-      header("Location: login.php"); //envío al usuario a la pag. de autenticación
+      echo "<script>alert('Su session a caducado por inactividad');window.location='login.php';</script>";
+
+      //header("Location: login.php"); //envío al usuario a la pag. de autenticación
       //sino, actualizo la fecha de la sesión
     }else {
     $_SESSION["ultimoAcceso"] = $ahora;

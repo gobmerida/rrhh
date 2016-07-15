@@ -1,6 +1,5 @@
 <?php
-
-	require_once '../db/conexion.php';
+	extract($_GET);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -38,7 +37,7 @@
   		</div><!-- /.container-fluid -->
 	</nav>
 			<div class="jumbotron">
-				<img src="../img/header3.png" class="img-responsive" alt="">
+				<img src="../img/header4.jpg" class="img-responsive" alt="">
 			</div>
 	</header>
 	<div class="container-fluid">
@@ -56,7 +55,11 @@
 						<label for="">Contraseña</label>
 						<input type="password" name="pass" class="form-control input-lg" autocomplete="off">
 					</div>
-					<input type="hidden" name="submit" value="1">
+					<?php if (@$q==1) { ?>
+						<div class="alert alert-danger" role="alert">ERROR: Debe ingresar los datos</div>
+					<?php }elseif (@$q==2) { ?>
+						<div class="alert alert-danger" role="alert">ERROR: Usuario no registrado en el sistema</div>
+					<?php } ?>
 					<button type="submit" class="btn btn-danger btn-lg ">Ingresar</button>
 				</form>
 			</div>
