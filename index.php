@@ -101,7 +101,7 @@
 				</div>
 				
 			</dvi>
-			<div class="col-sm-8 col-md-8" id="main">
+			<div class="col-sm-8 col-md-8 col-md-offset-1" id="main">
 					<div id="slider-wrapper">
 				      <div id="slider">
 				        <a href="noticiasf.php?id=<?php echo $resnot[0]; ?>"><img src="update/img/<?php echo $resnot[6]; ?>" /><p ><?php echo "<span class='text'>". ucwords($resnot[1])."</span></br><span class='text2'>".substr($resnot[2], 0, 100)."...</span>"; ?></p></a>

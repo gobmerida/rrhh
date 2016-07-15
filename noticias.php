@@ -124,8 +124,9 @@
               { ?>
                   <div class="col-sm-12 col-md-4">
                     <div class="thumbnail">
+                    <h4 class="text-center"><b><?php echo $array[1]; ?></b></h4>
                       <div class="caption text-justify">
-                        <h4><b><?php echo $array[1]; ?></b></h4>
+                        
                           <img src="<?php echo 'update/img/'.$array[6]; ?>" alt="" class="imgnot">
                           <p><?php echo substr($array[2], 0,250)."...."; $array[2];  ?></p>
                           <a href="noticiasf.php?id=<?php echo $array[0]; ?>" class="btn btn-danger" roll="boton  ">
