@@ -31,6 +31,14 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 
+<script>
+	jQuery(document).ready(function() {
+        $("#org").jOrgChart({
+			chartElement : '#chart',
+			dragAndDrop  : true
+		});
+    });
+</script>
 
 </head>
 <body>
@@ -100,18 +108,18 @@
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			<!--Start of Tawk.to Script-->
-				<script type="text/javascript">
-				var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-				(function(){
-				var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-				s1.async=true;
-				s1.src='https://embed.tawk.to/57879f4419594413516f1fd6/default';
-				s1.charset='UTF-8';
-				s1.setAttribute('crossorigin','*');
-				s0.parentNode.insertBefore(s1,s0);
-				})();
-				</script>
-			<!--End of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/57879f4419594413516f1fd6/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 			</dvi>
 			<div class="col-sm-8 col-md-8 col-md-offset-1" id="main">
 					<div id="slider-wrapper">
@@ -173,6 +181,9 @@
 			});
 			$(".galeria").click(function(){
 				$("#main").load("galeria.php");
+			});
+			$(".contacto").click(function(){
+				$("#main").load("contacto.php");
 			});
 		});
 
