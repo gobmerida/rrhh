@@ -339,6 +339,11 @@ margin-left: -50px;
   padding: 0px;
 }
 
+.organigrama{
+	margin-bottom: 30%;
+	margin-left: 20%;
+}
+
 .organigrama ul {
 	padding-top: 20px;
   position: relative;
@@ -400,21 +405,25 @@ margin-left: -50px;
   left: 50%;
 	border-left: 1px solid #d9534f;
 	width: 0;
-  height: 20px;
+  height: 240px;
 }
 
 .organigrama li a {
+	max-height: 175px;
+	min-height: 175px;
+	max-width: 175px;
+	min-width: 175px; 
 	border: 1px solid #d9534f;
 	padding: 1em 0.75em;
 	text-decoration: none;
 	color: #333;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,1);
 	font-family: arial, verdana, tahoma;
 	font-size: 0.85em;
 	display: inline-block;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms;
@@ -437,11 +446,50 @@ margin-left: -50px;
 }
 
 .organigrama li > ul > li > a > img {
-  	 width: 5em !important;
+  	 width: 100px;
+  	 height: 100px;
 }
 
 .organigrama ul > li > a > img {
-  	 width: 5em !important;
+	width: 100px;
+  	height: 100px;
 }
+
+.dpto{
+	float: left;
+	position: fixed;
+	margin-left: -25%;
+}
+
+/*INFORMACION DE ORGANIGRAMA*/
+.modal {
+width:100%; /*Toma el 100% del ancho de la página*/
+height:100%; /*Toma el 100% del alto de la página*/
+position:fixed; /*Con este código hacemos que el contenedor se mantenga en la pantalla y para que tome las dimensiones del body y no de la entrada*/
+background-color: rgba(1, 1, 1, 0.5); /*Color de fondo, incluye opacidad del 90%*/
+top:0; /*Position superior*/
+left:0; /*Posición lateral*/
+z-index:9999; /*Evitamos que algún elemento del blog sobreponga la ventana modal*/
+}
+
+#contenido-interno {
+	margin:10% auto; /*Separación arriba y centrado*/
+	font-size:12px; /*Tamaño de la fuente*/
+	width:600px; /*Ancho del contenedor*/
+	text-align:justify; /*Alineación del texto*/
+	color:#222; /*Color del texto*/
+	background:#fff; /*Color de fondo*/
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+}
+
+.media img{
+	width: 200px;
+	height: 200px;
+}
+
 
 /*END ORGANIGRAMA*/

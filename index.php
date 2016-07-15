@@ -90,7 +90,7 @@
 			        <li><a href="noticias.php">Noticias</a></li>
 			        <li><a href="#" class="galeria">Galería  </a></li>
 					<li><a href="#" class="contacto">Contacto</a></li>
-				    <li><a href="/constancias/">Constancias y Recibos</a></li>
+				    <li><a href="/constancias/" target="blank">Constancias y Recibos</a></li>
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -132,7 +132,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 				      <a href="javascript:void();" class="mas">&rsaquo;</a>
 				      <a href="javascript:void();" class="menos">&lsaquo;</a>
-				  </div><br>
+				  </div><br><br><br><br>
 
 				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
 					<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
@@ -146,7 +146,9 @@ s0.parentNode.insertBefore(s1,s0);
 					<a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="img/insti/saime.png" alt=""></a>
 				</marquee><br><br><br>
 			</div>
-			
+			<dvi class="col-sm-2 col-md-2">
+				
+			</dvi>
 		</div>
 		
 
