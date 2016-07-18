@@ -103,7 +103,7 @@ if ($_SESSION["autentificado"] != "SI") {
 	</div>
 
 	<footer>
-			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b>
+			<b>© 2016 D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br>
 	</footer>
 	<script src="../js/jquery-1.12.3.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>

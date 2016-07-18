@@ -74,7 +74,7 @@
 	</div>
 
 	<footer>
-			<b> Sitio Web Desarrollo y Administrado por el Departamento de Informatica de la D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br><br>
+			<b>© 2016 D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br>
 			<a href="https://twitter.com/rrhh_gob_merida" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
 			<div class="fb-follow color" data-href="https://www.facebook.com/zuck" data-layout="button" data-size="large" ></div>
 	</footer>
