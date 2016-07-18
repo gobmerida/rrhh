@@ -16,7 +16,7 @@ if ($_SESSION["autentificado"] != "SI") {
     $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
 
     //comparamos el tiempo transcurrido
-     if($tiempo_transcurrido >= 100) {
+     if($tiempo_transcurrido >= 200) {
      //si pasaron 10 minutos o más
       session_destroy(); // destruyo la sesión
       echo "<script>alert('Su session a caducado por inactividad');window.location='login.php';</script>";

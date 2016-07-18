@@ -129,7 +129,7 @@ s0.parentNode.insertBefore(s1,s0);
         
       </dvi>
       <div class="col-sm-8 col-md-8 " id="main">
-        <table class="table ">
+        <table class="table1 ">
         <tr>
           <?php
               while ($array = mysql_fetch_array($cad))

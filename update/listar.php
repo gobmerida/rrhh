@@ -14,7 +14,7 @@ if ($_SESSION["autentificado"] != "SI") {
     $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
 
     //comparamos el tiempo transcurrido
-     if($tiempo_transcurrido >= 200) {
+     if($tiempo_transcurrido >= 100) {
      //si pasaron 10 minutos o más
       session_destroy(); // destruyo la sesión
       echo "<script>alert('Su session a caducado por inactividad');window.location='login.php';</script>";
@@ -26,6 +26,11 @@ if ($_SESSION["autentificado"] != "SI") {
    }
 
    extract($_GET);
+   require_once '../db/conexion.php';
+
+   $query = "select * from data02";
+   $result = mysql_query($query);
+   
 }
 ?>
 <!DOCTYPE html>
@@ -66,6 +71,7 @@ if ($_SESSION["autentificado"] != "SI") {
 				           	<li><a href="listar.php" class="reseña">Editar</a></li>
 				        </ul>
 			        </li>
+			        <li><a href="index.php" class="reseña">Inicio</a></li>
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -78,43 +84,41 @@ if ($_SESSION["autentificado"] != "SI") {
 	<div class="hidden-xs col-sm-2 col-md-2"></div>
 
 	<div class="col-sm-8 col-md-8" id="main">
-			<div class="hidden-xs col-sm-3 col-md-3"></div>
-				<div class="col-sm-6 col-md-6">
-
-					<form id='g_noticia' enctype="multipart/form-data" method="post"  onsubmit="return validar(this);" action="recepcion.php" class="col-sm-12 ">
-						<div class="form-group">
-							<label for="">Título</label>
-							<input type="text" name="titulo" id="titulo_no" class="form-control" autocomplete="off" />
-						</div>
-						<div class="form-grup">
-							<label for="">Contenido</label>
-							<textarea type="text" id="contenido" name="contenido" class="form-control" autocomplete="off" rows="10"></textarea>
-						</div>
-
-						<div class="form-group">
-							<label>Foto</label>
-							<input type="file" id="imagen" name="imagen"/>
-						</div>
-
-						<div class="form-grup">
-							<label for="">Proviene</label>
-							<select name="relevancia" id="relevancia" class="form-control">
-								<option value="">Proviene</option>
-								<option value="0">De RRHH</option>
-								<option value="1">Otras</option>
-							</select>
-						</div><br>
-						<?php if (@$q==1) { ?>
-						<div class="alert alert-success" role="alert">Noticia generada con exito </div>
+			<div class="hidden-xs col-sm-2 col-md-2"></div>
+				<div class="col-sm-8 col-md-8">
+					<div class="table-responsive ">
+					<?php if (@$q==1) { ?>
+						<div class="alert alert-success" role="alert">Noticia editada con exito </div>
 						<?php }elseif (@$q==2) { ?>
-							<div class="alert alert-success" role="alert">ERROR: no se pudo generar la noticia</div>
+							<div class="alert alert-success" role="alert">ERROR: no se pudo editar la noticia</div>
 						<?php } ?>
+					  <table class="table table-bordered " id="editar">
+					  	<tr>
+					  		<th>#</th>
+					  		<th>Titulo de noticia</th>
+					  		<th>Contenido</th>
+					  		<th>Fecha de publicacion</th>
+					  		<th>Editar</th>
+					  	</tr>
+					  	
+					  		<?php while ($noticia = mysql_fetch_array($result)) { ?>
+					  		<tr <?php if($noticia[0]==@$n)echo 'class="alert alert-success"' ?>>
+					  			<td><?php echo $noticia[0]; ?></td>
+					  			<td><?php echo $noticia[1]; ?></td>
+					  			<td><?php echo substr($noticia[2], 0,50)."..."; ?></td>
+					  			<td><?php echo $noticia[3]; ?></td>
+					  			<td><a class="btn btn-danger" href="editar.php?Q=<?php echo $noticia[0]; ?>" role="button"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a></td>					  		
+					  		</tr>
+					  		<?php } ?>
+					  	
+					  	
+					  </table>
 
-						<input type='hidden' name='quienp' id='quienp' value='<?php echo $_SESSION['name']; ?>'/><br>
-					
-						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center>
-
-					</form>
+					  <center>
+					  	<a class="btn btn-danger" href="index.php" role="button">Volver</a>
+					  </center>
+					  
+					</div>
 				</div>
 			<div class="hidden-xs col-sm-3 col-md-3"></div>
 	</div>

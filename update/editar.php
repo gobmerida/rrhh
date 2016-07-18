@@ -14,7 +14,7 @@ if ($_SESSION["autentificado"] != "SI") {
     $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaGuardada));
 
     //comparamos el tiempo transcurrido
-     if($tiempo_transcurrido >= 200) {
+     if($tiempo_transcurrido >= 100) {
      //si pasaron 10 minutos o más
       session_destroy(); // destruyo la sesión
       echo "<script>alert('Su session a caducado por inactividad');window.location='login.php';</script>";
@@ -26,6 +26,12 @@ if ($_SESSION["autentificado"] != "SI") {
    }
 
    extract($_GET);
+
+   require_once '../db/conexion.php';
+
+   $query = "select * from data02 where id='$Q'";
+   $result = mysql_query($query);
+   $noticia = mysql_fetch_array($result);
 }
 ?>
 <!DOCTYPE html>
@@ -66,6 +72,8 @@ if ($_SESSION["autentificado"] != "SI") {
 				           	<li><a href="listar.php" class="reseña">Editar</a></li>
 				        </ul>
 			        </li>
+			        <li><a href="index.php" class="reseña">Inicio</a></li>
+
 		        </ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -81,16 +89,19 @@ if ($_SESSION["autentificado"] != "SI") {
 			<div class="hidden-xs col-sm-3 col-md-3"></div>
 				<div class="col-sm-6 col-md-6">
 
-					<form id='g_noticia' enctype="multipart/form-data" method="post"  onsubmit="return validar(this);" action="recepcion.php" class="col-sm-12 ">
+					<form id='g_noticia' enctype="multipart/form-data" method="post"  onsubmit="return validar(this);" action="recepcionedit.php" class="col-sm-12 ">
 						<div class="form-group">
 							<label for="">Título</label>
-							<input type="text" name="titulo" id="titulo_no" class="form-control" autocomplete="off" />
+							<input type="text" name="titulo" id="titulo_no" class="form-control" autocomplete="off" value="<?php echo $noticia[1]; ?>" />
 						</div>
 						<div class="form-grup">
 							<label for="">Contenido</label>
-							<textarea type="text" id="contenido" name="contenido" class="form-control" autocomplete="off" rows="10"></textarea>
+							<textarea type="text" id="contenido" name="contenido" class="form-control" autocomplete="off" rows="10" ><?php echo $noticia[2]; ?></textarea>
 						</div>
-
+						<div class="form-group">
+							<label>Foto actual</label>
+							<img src="img/<?php echo $noticia[6]; ?>" alt="" class="actual">
+						</div>
 						<div class="form-group">
 							<label>Foto</label>
 							<input type="file" id="imagen" name="imagen"/>
@@ -100,21 +111,30 @@ if ($_SESSION["autentificado"] != "SI") {
 							<label for="">Proviene</label>
 							<select name="relevancia" id="relevancia" class="form-control">
 								<option value="">Proviene</option>
-								<option value="0">De RRHH</option>
-								<option value="1">Otras</option>
+								<?php if ($noticia[5]==0) { ?>
+									<option value="0" selected>De RRHH</option>
+									<option value="1">Otras</option>
+								<?php }else{?>
+									<option value="0">De RRHH</option>
+									<option value="1" selected>Otras</option>
+								<?php	} ?>
+								
+								
 							</select>
 						</div><br>
 						<?php if (@$q==1) { ?>
-						<div class="alert alert-success" role="alert">Noticia generada con exito </div>
+						<div class="alert alert-success" role="alert">Noticia edita con exito </div>
 						<?php }elseif (@$q==2) { ?>
-							<div class="alert alert-success" role="alert">ERROR: no se pudo generar la noticia</div>
+							<div class="alert alert-success" role="alert">ERROR: no se pudo editar la noticia</div>
 						<?php } ?>
-
+						<input type='hidden' name='fotoactual' value='<?php echo $noticia[6]; ?>'/>
+						<input type='hidden' name='id' value='<?php echo $noticia[0]; ?>'/>
 						<input type='hidden' name='quienp' id='quienp' value='<?php echo $_SESSION['name']; ?>'/><br>
 					
-						<center><input type="submit" value="Publicar" id="PubSub" class="btn btn-danger  btn-lg" /></center>
+						<center><a class="btn btn-lg btn-danger" href="listar.php" role="button">Cancelar</a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Guardar" id="PubSub" class="btn btn-danger  btn-lg" /></center>
 
 					</form>
+
 				</div>
 			<div class="hidden-xs col-sm-3 col-md-3"></div>
 	</div>
