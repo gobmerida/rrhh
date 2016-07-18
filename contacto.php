@@ -52,7 +52,7 @@
 		    	<a href="#"><img src="img/contacto/jefe.jpg" alt="" class="media-object"> </a>
 		 	 	</div>
 		  		<div class="media-body">
-		   	 		<h4 class="media-heading">Middle aligned media</h4>
+		   	 		<h4 class="media-heading">Miguel Angel Rincon Figueroa</h4>
 					Director del departamento de recursos humanos
 		  		</div>
 			</div>

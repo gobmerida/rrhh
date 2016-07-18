@@ -502,7 +502,10 @@ margin-left: -50px;
 	background-color: #ececec;
 }
 
-
+.x{
+	float: right;
+	cursor: pointer;
+}
 
 
 /*END ORGANIGRAMA*/
