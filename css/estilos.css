@@ -466,12 +466,33 @@ margin-left: -50px;
 .modal img{
 	width: 200px;
 	height: 200px;
+	border-radius: 100%;
 }
 
 
 .modal{
-	
+	top: 30%; 
 }
+
+.media-body{
+	padding: 10%;
+	border-radius: 10px;
+	background-color: #ececec;
+	width: 65%;
+}
+
+.modal-content{
+	width: 65%;
+	left: 20%;
+}
+
+.media{
+	padding: 2%;
+	border-radius: 10px;
+	width: 100%;
+	background-color: #ececec;
+}
+
 
 
 
