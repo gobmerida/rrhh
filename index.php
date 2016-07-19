@@ -96,8 +96,8 @@
 			<dvi class="col-sm-2 col-md-2">
 				<div id="timeline-twitter" class="hidden-xs hidden-sm timeline-twitt">
 					<h4 class="h">TWITTER DEPPRH</h4>
-						<a class="twitter-timeline enlace-twitter" style="z-index: 2;" width="240" height="320" data-theme="light" data-link-color="#0084b4" data-chrome="   " data-border-color="#e8e8e8" data-tweet-limit="0" data-related="" data-screen-name="rrhh_gob_merida" data-show-replies="false" data-aria-polite="Polite" lang="ES" href="https://twitter.com/rrhh_gob_merida" data-widget-id="332093127265484800"><img src="./img/loading.gif" style="width:8%"> Cargando Twitter</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<a class="twitter-timeline" href="https://twitter.com/rrhh_gob_merida">Tweets by rrhh_gob_merida</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				
 			</dvi>
@@ -127,9 +127,6 @@
 				</marquee><br><br><br>
 			</div>
 			
-				<div class="hidden-xs hidden-sm visible-md-inline visible-lg-inline col-md-2">
-					<div  class="fb-comment-embed" data-href="https://www.facebook.com/zuck/posts/10102577175875681?comment_id=1193531464007751&amp;reply_comment_id=654912701278942" data-width="190" data-include-parent="true"></div>
-				</div>
 		</div>
 		
 
