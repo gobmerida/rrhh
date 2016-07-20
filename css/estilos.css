@@ -97,6 +97,9 @@ height: 150px;
 	margin-top: -10%;
 	margin-bottom: 5%;	
 }
+.marq img{
+	box-shadow: 0px 0px 45px #8B8B8B;	
+}
 
 .pagination{
 	margin-bottom: 10% !important;

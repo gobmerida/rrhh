@@ -25,7 +25,6 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="viewport" content="width=960">
 	<title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
 	<link rel="shortcut icon" href="img/icono.png" type="image/ico" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -121,7 +120,7 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 			</dvi>
-			<div class="col-sm-8 col-md-8 col-md-offset-1" id="main">
+			<div class="col-sm-8 col-md-8 col-md-offset-1 body" id="main">
 					<div id="slider-wrapper">
 				      <div id="slider">
 				        <a href="noticiasf.php?id=<?php echo $resnot[0]; ?>"><img src="update/img/<?php echo $resnot[6]; ?>" /><p ><?php echo "<span class='text'>". ucwords($resnot[1])."</span></br><span class='text2'>".substr($resnot[2], 0, 100)."...</span>"; ?></p></a>
@@ -153,7 +152,7 @@ s0.parentNode.insertBefore(s1,s0);
 		
 
 	</div>
-
+<br><br>
 	<footer >
 			<b>© 2016 D.E.P.P. de Recursos Humanos del Estado Mérida.</b><br>
 			<a href="https://twitter.com/rrhh_gob_merida" target="_blank" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @rrhh_gob_merida</a>
@@ -167,7 +166,7 @@ s0.parentNode.insertBefore(s1,s0);
 		$(function(){
 
 			$(".reseña").click(function(){
-				$("#main").load("reseña.html");
+				$("#main").load("resena.html");
 			});
 			$(".funciones").click(function(){
 				$("#main").load("funciones.html");

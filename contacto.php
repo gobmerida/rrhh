@@ -26,7 +26,7 @@
 
 		<li><a data-toggle="modal" href="#admin"><img src="img/contacto/DSCN7517.jpg" alt=""><br><b>Dpto. <br>Administración</b></a></li>		
 	</ul>
-</div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
 	<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
 	<a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>

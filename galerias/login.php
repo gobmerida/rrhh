@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	extract($_GET);
 ?>
 <!DOCTYPE html>
@@ -6,7 +6,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="viewport" content="width=960">
 	<title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/estilos.css">
