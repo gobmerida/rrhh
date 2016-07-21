@@ -39,7 +39,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="viewport" content="width=960">
   <title>D.E.P.P. de Recursos Humanos del Estado Mérida</title>
   <link rel="shortcut icon" href="img/icono.png" type="image/ico" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
