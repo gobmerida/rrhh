@@ -28,6 +28,12 @@ height: 150px;
 	height: 100px;
 }
 
+.pag{
+	position: absolute;
+	top: 68%;
+	left: 45%;
+}
+
 
 #titulo{
 	margin-top: 17%;
@@ -94,7 +100,6 @@ height: 150px;
 }
 
 .marq{
-	margin-top: -10%;
 	margin-bottom: 5%;	
 }
 .marq img{
@@ -124,12 +129,10 @@ footer {
 /*Seccion de noticias*/
 .thumbnail img{
 	width: 100%;
-	height: 250px;
-	margin-bottom: 5%;
+	min-height: 250px;
 }
 
 .table1{
-	padding: 1px !important;
 	border-collapse: separate !important;
   	border-spacing:  5px !important;
   	padding: 10px !important;

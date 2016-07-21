@@ -131,7 +131,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 				      <a href="javascript:void();" class="mas">&rsaquo;</a>
 				      <a href="javascript:void();" class="menos">&lsaquo;</a>
-				  </div><br><br><br><br>
+				  </div>
 
 				<marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
 					<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
@@ -143,7 +143,7 @@ s0.parentNode.insertBefore(s1,s0);
 					<a href="http://www.pcmerida.gob.ve/" target="_blank"><img src="img/insti/pcmerida.jpg" alt=""></a>
 					<a href="http://www.polimer.gob.ve/" target="_blank"><img src="img/insti/polcia.png" alt=""></a>
 					<a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="img/insti/saime.png" alt=""></a>
-				</marquee><br><br><br>
+				</marquee>
 			</div>
 			<dvi class="col-sm-2 col-md-2">
 				

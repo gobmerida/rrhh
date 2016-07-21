@@ -7,7 +7,7 @@
 
 ?>
 
-<div class=" wrapper ">
+<div class=" wrapper col-ms-12">
     <div>
       <?php
             while ($galeria = mysql_fetch_array($result)) {

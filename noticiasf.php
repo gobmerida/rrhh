@@ -95,7 +95,7 @@
       </script>
       <!--End of Tawk.to Script-->
       </div>
-      <div class="col-sm-8 col-md-8" id="main">
+      <div class="col-sm-8 col-md-8 col-md-offset-1" id="main">
           <?php
               
               $ids=$id;
@@ -113,12 +113,10 @@
                     <p><img src="<?php echo 'update/img/'.$res[6]; ?>" alt="" class="img"><?php echo $res[2]; ?></p>
                   </div>
               </div>
-              <br>
-              <br>
+
 
       </div>
-      <div class="hidden-xs col-sm-2 col-md-2"></div><br>
-    
+      <div class="hidden-xs col-sm-2 col-md-2"></div>
       
     </div>
 		<div class="col-sm-2 col-md-2"></div>
@@ -127,12 +125,6 @@
   <div class="col-sm-2 col-md-2"></div>
   <div class="col-sm-8 col-md-8">
       <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
   <marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
           <a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
           <a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>
@@ -143,7 +135,7 @@
           <a href="http://www.pcmerida.gob.ve/" target="_blank"><img src="img/insti/pcmerida.jpg" alt=""></a>
           <a href="http://www.polimer.gob.ve/" target="_blank"><img src="img/insti/polcia.png" alt=""></a>
           <a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="img/insti/saime.png" alt=""></a>
-        </marquee><br><br><br>
+        </marquee><br>
   </div>
   <div class="col-sm-2 col-md-2"></div>
 
@@ -180,6 +172,9 @@
 
       $(".galeria").click(function(){
         $("#main").load("galeria.php");
+      });
+      $(".contacto").click(function(){
+        $("#main").load("contacto.php");
       });
 
     });

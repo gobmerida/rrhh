@@ -127,14 +127,14 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
         
       </dvi>
-      <div class="col-sm-8 col-md-8 " id="main">
+      <div class="col-sm-8 col-md-8 col-md-offset-1 body" id="main">
         <table class="table1 ">
         <tr>
           <?php
               while ($array = mysql_fetch_array($cad))
 
               { ?>
-                  <div class="col-sm-12 col-md-4">
+                  <div class="col-sm-12 col-md-4 ">
                     <div class="thumbnail">
                     <h4 class="text-center"><b><?php echo $array[1]; ?></b></h4>
                       <div class="caption text-justify">
@@ -152,7 +152,7 @@ s0.parentNode.insertBefore(s1,s0);
           echo "</tr> </table>";
           //creando los enlaces de paginacion de resultados
 
-              echo "<center> <nav><ul class='pagination pagination-lg'>";
+              echo "<center> <nav class='pag'><ul class='pagination pagination-lg'>";
 
               if($total_registros>$registros){
               if(($pagina - 1) > 0) {
@@ -195,7 +195,7 @@ s0.parentNode.insertBefore(s1,s0);
               }
               } echo "</ul>
             </nav> </center>";
-              ?>
+              ?><br><br><br><br>
               <marquee class="hidden-xs marq" direction="left" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="4">
                       <a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
                       <a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>
