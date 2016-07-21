@@ -73,9 +73,9 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
       </dvi>
-      <div class="col-sm-8 col-md-8 col-md-offset-1 body" id="main">
-          <div id="slider-wrapper">
-              <div id="slider">
+      <div class="col-sm-8 col-md-8 col-md-offset-1 body " id="main">
+          <div id="slider-wrapper" >
+              <div id="slider" >
                 <?php while ($foto = mysql_fetch_array($result)) { ?>
                     <a href="#"><img src="<?php echo $foto[2]; ?>" /></a>
                 <?php } ?>
@@ -83,6 +83,10 @@
 
               <a href="javascript:void();" class="mas">&rsaquo;</a>
               <a href="javascript:void();" class="menos">&lsaquo;</a>
+              <div >
+                <center><h1 ><?php echo ucwords($id); ?></h1></center>
+              </div>
+              
           </div>
 
           <marquee class="hidden-xs marq" direction="left" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="4">

@@ -78,6 +78,7 @@
               <div id="slider">
                 <?php while ($foto = mysql_fetch_array($result)) { ?>
                     <a href="#"><img src="<?php echo $foto[2]; ?>" /></a>
+                    <center><h1><?php echo ucwords($id); ?></h1></center>
                 <?php } ?>
               </div>
 

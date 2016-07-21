@@ -96,6 +96,7 @@
 
               <a href="javascript:void();" class="mas">&rsaquo;</a>
               <a href="javascript:void();" class="menos">&lsaquo;</a>
+              <center><h1><?php echo ucwords($id); ?></h1></center>
           </div>
 
           <marquee class="hidden-xs marq" direction="left" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="4">
