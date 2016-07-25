@@ -67,11 +67,23 @@
   <div class="container-fluid">
     <div class="row">
       <dvi class="col-sm-2 col-md-2">
-        <div id="timeline-twitter" class="hidden-xs hidden-sm timeline-twitt">
+       <div id="timeline-twitter" class="hidden-xs hidden-sm timeline-twitt">
           <h4 class="h">TWITTER DEPPRH</h4>
-            <a class="twitter-timeline enlace-twitter" style="z-index: 2;" width="240" height="320" data-theme="light" data-link-color="#0084b4" data-chrome="   " data-border-color="#e8e8e8" data-tweet-limit="0" data-related="" data-screen-name="rrhh_gob_merida" data-show-replies="false" data-aria-polite="Polite" lang="ES" href="https://twitter.com/rrhh_gob_merida" data-widget-id="332093127265484800"><img src="./img/loading.gif" style="width:8%"> Cargando Twitter</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <a class="twitter-timeline" href="https://twitter.com/rrhh_gob_merida">Tweets by rrhh_gob_merida</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/57879f4419594413516f1fd6/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
       </dvi>
       <div class="col-sm-8 col-md-8 col-md-offset-1 body" id="main">
           <div id="slider-wrapper">
@@ -116,8 +128,12 @@
   <script>
     $(function(){
 
+       $(".inicio").click(function(){
+        $("#main").load("/");
+      });
+
       $(".reseña").click(function(){
-        $("#main").load("../navegacion/reseña.html");
+        $("#main").load("../navegacion/resena.html");
       });
       $(".funciones").click(function(){
         $("#main").load("../navegacion/funciones.html");
@@ -129,8 +145,9 @@
         $("#main").load("../navegacion/objetivos.html");
       });
       $(".noticias").click(function(){
-        $("#main").load("../navegacion/noticias.php");
+        $("#main").load("../navegacion/noticias.php#main");
       });
+
       $(".galeria").click(function(){
         $("#main").load("../navegacion/galeria.php");
       });

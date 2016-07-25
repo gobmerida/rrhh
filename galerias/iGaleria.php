@@ -129,8 +129,12 @@
   <script>
     $(function(){
 
+      $(".inicio").click(function(){
+        $("#main").load("/");
+      });
+
       $(".reseña").click(function(){
-        $("#main").load("../navegacion/reseña.html");
+        $("#main").load("../navegacion/resena.html");
       });
       $(".funciones").click(function(){
         $("#main").load("../navegacion/funciones.html");
@@ -142,13 +146,14 @@
         $("#main").load("../navegacion/objetivos.html");
       });
       $(".noticias").click(function(){
-        $("#main").load("../navegacion/noticias.php");
+        $("#main").load("../navegacion/noticias.php#main");
       });
+
       $(".galeria").click(function(){
         $("#main").load("../navegacion/galeria.php");
       });
       $(".contacto").click(function(){
-        $("#main").load("contacto.php");
+        $("#main").load("../navegacion/contacto.php");
       });
     });
 

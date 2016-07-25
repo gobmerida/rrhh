@@ -225,7 +225,7 @@ s0.parentNode.insertBefore(s1,s0);
     $(function(){
 
       $(".reseña").click(function(){
-        $("#main").load("reseña.html");
+        $("#main").load("resena.html");
       });
       $(".funciones").click(function(){
         $("#main").load("funciones.html");
@@ -236,8 +236,14 @@ s0.parentNode.insertBefore(s1,s0);
       $(".objetivos").click(function(){
         $("#main").load("objetivos.html");
       });
+      $(".noticias").click(function(){
+        $("#main").load("noticias.php");
+      });
       $(".galeria").click(function(){
         $("#main").load("galeria.php");
+      });
+      $(".contacto").click(function(){
+        $("#main").load("contacto.php");
       });
     });
 

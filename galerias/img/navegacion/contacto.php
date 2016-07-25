@@ -1,42 +1,42 @@
 <div class="organigrama">
 	<ul>
 		<li>
-			<a data-toggle="modal" href="#director" ><img src="img/contacto/jefe.jpg" alt=""><br><b>Director</b></a>	
+			<a data-toggle="modal" href="#director" ><img src="../../../img/contacto/jefe.jpg" alt=""><br><b>Director</b></a>	
 			<ul>
 				<li>
-					<a data-toggle="modal" href="#cordinadora"><img src="img/contacto/DSCN7509.jpg" alt=""><br><b>Coordinadora general</b></a>
+					<a data-toggle="modal" href="#cordinadora"><img src="../../../img/contacto/DSCN7509.jpg" alt=""><br><b>Coordinadora general</b></a>
 					<ul>
-				        <li><a data-toggle="modal" href="#aporte"><img src="img/contacto/DSCN7552.jpg" alt=""><br><b>Unidad de registro y control de aporte</b></a></li>
-				        <li><a data-toggle="modal" href="#asesoria"><img src="img/contacto/DSCN7564.jpg" alt=""><br><b>Unidad de <br>asesoria legal</b></a></li>
+				        <li><a data-toggle="modal" href="#aporte"><img src="../../../img/contacto/DSCN7552.jpg" alt=""><br><b>Unidad de registro y control de aporte</b></a></li>
+				        <li><a data-toggle="modal" href="#asesoria"><img src="../../../img/contacto/DSCN7564.jpg" alt=""><br><b>Unidad de <br>asesoria legal</b></a></li>
 
-				        <li><a data-toggle="modal" href="#presupuesto"><img src="img/contacto/DSCN7526.jpg" alt=""><br><b>Unidad de <br>planificacíon y <br>presupuesto</b></a></li>
+				        <li><a data-toggle="modal" href="#presupuesto"><img src="../../../img/contacto/DSCN7526.jpg" alt=""><br><b>Unidad de <br>planificacíon y <br>presupuesto</b></a></li>
 			    	</ul>
 				</li>	
 			</ul>
 		</li>
 	</ul><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<ul class="dpto">
-		<li><a data-toggle="modal" href="#informatica"><img src="img/contacto/16316852.jpg" alt=""><br><b>Dpto. <br>informatica</b></a></li>
+		<li><a data-toggle="modal" href="#informatica"><img src="../../../img/contacto/16316852.jpg" alt=""><br><b>Dpto. <br>informatica</b></a></li>
 
-		<li><a data-toggle="modal" href="#obrero"><img src="img/contacto/DSCN7543.jpg" alt=""><br><b>Dpto. <br>Personal obrero</b></a></li>
-		<li><a data-toggle="modal" href="#empleado"><img src="img/contacto/DSCN7586.jpg" alt=""><br><b>Dpto. <br>Empleados</b></a></li>
+		<li><a data-toggle="modal" href="#obrero"><img src="../../../img/contacto/DSCN7543.jpg" alt=""><br><b>Dpto. <br>Personal obrero</b></a></li>
+		<li><a data-toggle="modal" href="#empleado"><img src="../../../img/contacto/DSCN7586.jpg" alt=""><br><b>Dpto. <br>Empleados</b></a></li>
 
-		<li><a data-toggle="modal" href="#jubilado"><img src="img/contacto/mariani.jpg" alt=""><br><b>Dpto. <br>Jubilados y pensionados</b></a></li>
-		<li><a data-toggle="modal" href="#pasivo"><img src="img/contacto/DSCN7636.jpg" alt=""><br><b>Dpto. <br>Pasivos laborales</b></a></li>
+		<li><a data-toggle="modal" href="#jubilado"><img src="../../../img/contacto/mariani.jpg" alt=""><br><b>Dpto. <br>Jubilados y pensionados</b></a></li>
+		<li><a data-toggle="modal" href="#pasivo"><img src="../../../img/contacto/DSCN7636.jpg" alt=""><br><b>Dpto. <br>Pasivos laborales</b></a></li>
 
-		<li><a data-toggle="modal" href="#admin"><img src="img/contacto/DSCN7517.jpg" alt=""><br><b>Dpto. <br>Administración</b></a></li>		
+		<li><a data-toggle="modal" href="#admin"><img src="../../../img/contacto/DSCN7517.jpg" alt=""><br><b>Dpto. <br>Administración</b></a></li>		
 	</ul>
 </div><br><br><br>
 <marquee class="hidden-xs marq" direction="left" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="4">
-	<a href="http://171.merida.gob.ve/" target="_blank"><img src="img/insti/171.png" alt=""></a>
-	<a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="img/insti/bomberos.png" alt=""></a>
-	<a href="http://www.fundacite-merida.gob.ve/" target="_blank"><img src="img/insti/fundacite.jpg" alt=""></a>
-	<a href="http://www.gobiernoenlinea.ve/home/homeG.dot" target="_blank"><img src="img/insti/gobierno_linea.jpg" alt=""></a>
+	<a href="http://171.merida.gob.ve/" target="_blank"><img src="i../../../mg/insti/171.png" alt=""></a>
+	<a href="http://bomberosmerida.gob.ve/" target="_blank"><img src="../../../img/insti/bomberos.png" alt=""></a>
+	<a href="http://www.fundacite-merida.gob.ve/" target="_blank"><img src="../../../img/insti/fundacite.jpg" alt=""></a>
+	<a href="http://www.gobiernoenlinea.ve/home/homeG.dot" target="_blank"><img src="../../../img/insti/gobierno_linea.jpg" alt=""></a>
 	<a href="" target="_blank"><img src="img/insti/logo_merida1.png" alt=""></a>
 	<a href="http://www.ona.gob.ve/"><img src="img/insti/ona.jpg" alt=""></a>
-	<a href="http://www.pcmerida.gob.ve/" target="_blank"><img src="img/insti/pcmerida.jpg" alt=""></a>
-	<a href="http://www.polimer.gob.ve/" target="_blank"><img src="img/insti/polcia.png" alt=""></a>
-	<a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="img/insti/saime.png" alt=""></a>
+	<a href="http://www.pcmerida.gob.ve/" target="_blank"><img src="../../../img/insti/pcmerida.jpg" alt=""></a>
+	<a href="http://www.polimer.gob.ve/" target="_blank"><img src="../../../img/insti/polcia.png" alt=""></a>
+	<a href="https://pasaporte.saime.gob.ve/" target="_blank"><img src="../../../img/insti/saime.png" alt=""></a>
 </marquee>
 
 
@@ -50,7 +50,7 @@
       	<div class="media">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	  		<div class="media-left media-middle">
-		    	<a href="#"><img src="img/contacto/jefe.jpg" alt="" class="media-object"> </a>
+		    	<a href="#"><img src="../../../img/contacto/jefe.jpg" alt="" class="media-object"> </a>
 		 	 	</div>
 		  	<div class="media-body">
 		   	 	<h4 class="media-heading">Miguel Angel Rincon Figueroa</h4>Director del departamento de recursos humanos
@@ -68,7 +68,7 @@
       <div class="media">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="media-left media-middle">
-          <a href="#"><img src="img/contacto/DSCN7509.jpg" alt="" class="media-object"></a>
+          <a href="#"><img src="../../../img/contacto/DSCN7509.jpg" alt="" class="media-object"></a>
         </div>
         <div class="media-body">
           <h4 class="media-heading">Fereda Sanchez Dayari V.</h4>Coordinadora general
@@ -89,7 +89,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7552.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7552.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -112,7 +112,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7564.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7564.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -136,7 +136,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7526.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7526.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -159,7 +159,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/16316852.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/16316852.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -182,7 +182,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7543.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7543.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -205,7 +205,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7586.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7586.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -228,7 +228,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/mariani.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/mariani.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -252,7 +252,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7636.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7636.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">
@@ -275,7 +275,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div class="media-left media-middle">
     <a href="#">
-      <img src="img/contacto/DSCN7517.jpg" alt="" class="media-object">
+      <img src="../../../img/contacto/DSCN7517.jpg" alt="" class="media-object">
     </a>
   </div>
   <div class="media-body">

@@ -155,7 +155,7 @@
       });
 
       $(".reseña").click(function(){
-        $("#main").load("reseña.html");
+        $("#main").load("resena.html");
       });
       $(".funciones").click(function(){
         $("#main").load("funciones.html");

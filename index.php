@@ -104,7 +104,7 @@
 				<div id="timeline-twitter" class="hidden-xs hidden-sm timeline-twitt">
 					<h4 class="h">TWITTER DEPPRH</h4>
 						<a class="twitter-timeline" href="https://twitter.com/rrhh_gob_merida">Tweets by rrhh_gob_merida</a>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			<!--Start of Tawk.to Script-->
 <script type="text/javascript">
